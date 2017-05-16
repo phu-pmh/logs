@@ -9,4 +9,7 @@ share: true
 ---
 
 Hello World!
-Nothing here yet, but thanks for visiting!
+Nothing here yet, but thanks for visiting!  
+
+မဂၤလာပါ။
+
