@@ -111,6 +111,7 @@ body {
 .post {
 
   &-title {
+    color: $oc-violet-9;
     margin-top: 0rem;
     margin-bottom: 0.3rem;
     font-size: 2.25em;
@@ -126,7 +127,7 @@ body {
   }
 
    &-tag {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
 
     ul {
       li:before {
@@ -193,6 +194,7 @@ body {
     }
 
     &-title {
+      color: $oc-violet-9;
       font-size : 1.3rem;
       font-weight: 700;
     }
@@ -338,6 +340,7 @@ body {
       }
 
       &-title {
+        color: $oc-violet-9;
         font-size : 1.2rem;
         font-weight: 400;
       }
