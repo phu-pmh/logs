@@ -39,7 +39,7 @@ share: true
 
 ဥပမာ Chatbotဆိုပါေတာ့။ ေအာက္က Google Assistantကို အိမ္ကေန Sentosaကို ဘယ္လိုသြားရမလဲလို့ေမးတဲ့ dialogကိုၾကည့္ၾကည့္ပါ။ Chatbotက ေမးခြန္းကိုၾကည့္တယ္၊ ေျဖႏိုင္ဖို့ၾကိဳးစားတယ္၊ ဒါေပမယ့္ အိမ္လိပ္စာကို မသိဘူး။ မသိေတာ့ Userကိုျပန္ေမးမယ္။ Userကဘာဆက္ေျပာလည္း အေပၚမူတည္ျပီး လုပ္စရာရွိတာ ဆက္လုပ္မယ္။ Userနဲ့ botနဲ့ၾကားမွာ Interactionရွိတယ္။ ဒါ့အျပင္ စကားေျပာသြားတာလည္း အေပၚနဲ့ ေအာက္နဲ့ ဆက္ဆက္မွဴ Sequenceရွိတယ္။
 
-![Chatbot]({{ site.url }}/logs/images/RLIntro/GoogleAssistant.png)
+![Chatbot]({{ site.url }}/logs/images/RLIntro/GoogleAssistant.jpg)
 
 Supervised Learning လိုမ်ိဳး Inputေပး၊ Output Predictionလုပ္တဲ့ methodမ်ိဳးဆို Interactionကိုထည့္စဥ္းစားဖို့ေတာ္ေတာ္ခက္တယ္။ Supervised learningကိုလည္း Dialog Systemsေတြမွာသံုးတာမရွိဘူးမဟုတ္ဘူး။ အမ်ားၾကီး ရွိတယ္။ ဒါေပမယ့္ Deep Reinforcement Learningကိုသံုးရင္ User Interactionကိုပါ ထည့္စဥ္းစားလို့ရတယ္။ ဒါ့အျပင္ Supervised Learningလိုမ်ိဳး Reinforcement Learningက ဒီေမးခြန္းေမးရင္ ဒါမ်ိဳးေျဖပါဆိုျပီး သင္ေပးရမယ့္ အေမးအေျဖ Data setေတြအမ်ားၾကီးမလိုဘူး။ Dialog ဆိုတာမ်ိဳးက အမ်ိဳးမ်ိဳးေပါက္ကရေျပာလို့ရတာေလ။ အဲေတာ့ User Interactionကေနလည္း သင္ယူဖို့ အေရးၾကီးတယ္။  
 
