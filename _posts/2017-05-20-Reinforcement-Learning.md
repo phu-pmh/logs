@@ -2,7 +2,7 @@
 layout: post
 title: "Reinforcement Learning မိတ္ဆက္"
 description: "Reinforcement Learning အက်ဥ္းခ်ဳပ္ မိတ္ဆက္"
-date: 2017-05-19
+date: 2017-05-20
 tags: [Reinforcement Learning]
 comments: true
 share: true
