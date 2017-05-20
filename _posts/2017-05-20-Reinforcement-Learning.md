@@ -17,6 +17,7 @@ share: true
 * Exploration Vs Exploitation  
 * Supervised Learning နဲ့ဘာကြာသလဲ ??    
 * Reinforcement Learning ကိုဘယ္လိုေလ့လာရမလဲ ??
+* မွတ္ခ်က္
 {:toc}
 
 ## မိတ္ဆက္  
@@ -30,21 +31,22 @@ share: true
 ဥပမာ စစ္တုရင္ကစားရင္ ကိုယ့္အေရွ့မွာ အေကာင္အေသးေလးေတြ စားလို့ရတာရွိလိမ့္မယ္။ အဲလိုစားလိုုက္ရင္ ဆုရလိမ့္မယ္။ ဒါေပမယ့္ စားလိုက္ရင္ ေရရွည္မွာေကာင္းခ်င္မွ ေကာင္းမယ္။ ဟိုဘက္က Strategy အရ သူတို့အေကာင္အၾကီးေတြေရြႊ့ဖို့ အေကာင္အေသး(Pawn)ေတြကို တမင္ခ်ေၾကြးထားတာလည္း ျဖစ္ႏိုင္တယ္။ ဒါေၾကာင့္ **Immediate Reward** (လက္ငင္းဆု)ထက္ **Cumulative Rewardအမ်ားဆံုးရမယ့္ Action** ေတြလုပ္တတ္ေအာင္ သင္ယူရပါမယ္။ ဒါကေတာ့ Reinforcement Learning ရဲ့အေျခခံ သေဘာတရားပါ။ 
 
 ## Some Applications of Reinforcement Learning     
-Roboticsဘက္မွာ Robotကို အျပင္ေလာကနဲ့ဆက္ဆံျပီး ဆံုးျဖတ္ခ်က္ေတြ ခ်တတ္လာေအာင္ သင္ေပးတဲ့ေနရာမ်ိဳးမွာ RLကိုသံုးတယ္။ ေမာင္းသူမဲ့ ကားေတြ Droneေလးေတြမွာလည္း သူ့ကိုုသံုးတယ္။
-DeepMindရဲ့ AlphaGoအေၾကာင္းကို ေတာ္ေတာ္မ်ားမ်ားၾကားဖူးၾကမွာပါ။ AlphaGoက Reinforcement Learningကိုသံုးထားတာပါ။ Computerကို Gameေတြေဆာ့တတ္ေအာင္ သင္ေပးတဲ့ေနရာမွာ RLကိုအသံုးျပဳတယ္။[^1] [^2]  
+Roboticsဘက္မွာ Robotကို အျပင္ေလာကနဲ့ဆက္ဆံျပီး ဆံုးျဖတ္ခ်က္ေတြ ခ်တတ္လာေအာင္ သင္ေပးတဲ့ေနရာမ်ိဳးမွာ RLကိုသံုးတယ္။ ေမာင္းသူမဲ့ ကားေတြ Droneေလးေတြမွာလည္း သူ့ကိုုသံုးတယ္။  
+
+DeepMindရဲ့ AlphaGoအေၾကာင္းကို ေတာ္ေတာ္မ်ားမ်ားၾကားဖူးၾကမွာပါ။ AlphaGoက Reinforcement Learningကိုသံုးထားတာပါ။ Computerကို Gameေတြေဆာ့တတ္ေအာင္ သင္ေပးတဲ့ေနရာမွာ RLကိုအသံုးျပဳတယ္။[^1][^2]  
 
 [^1]: [AlphaGo](https://deepmind.com/research/alphago/)  
 
 [^2]: [Reinforcement learning with unsupervised auxiliary tasks](https://deepmind.com/blog/reinforcement-learning-unsupervised-auxiliary-tasks/)  
 
-Roboticsတို့ Gameတို့အျပင္ Medicine၊ Manufacturingအစရွိသျဖင့္ တျခားနယ္ပယ္ေတြမွာလည္း RLကိုသံုးတယ္။ ဥပမာေပးရရင္ Googleက Reinforcement Learningကိုသံုးျပီး Data Center Cooling ကုန္က်ေငြကို ၄၀ရာခိုင္ႏွဳန္း ေလွ်ာ့ခ်ခဲ့တယ္။[^3] [^4]  
+Roboticsတို့ Gameတို့အျပင္ Medicine၊ Manufacturingအစရွိသျဖင့္ တျခားနယ္ပယ္ေတြမွာလည္း RLကိုသံုးတယ္။ ဥပမာေပးရရင္ Googleက Reinforcement Learningကိုသံုးျပီး Data Center Cooling ကုန္က်ေငြကို ၄၀ရာခိုင္ႏွဳန္း ေလွ်ာ့ခ်ခဲ့တယ္။[^3][^4]  
 
 [^3]: [DeepMind AI Reduces Google Data Centre Cooling Bill by 40%](https://deepmind.com/blog/deepmind-ai-reduces-google-data-centre-cooling-bill-40/)  
 
 [^4]: [The AI That Cut Google’s Energy Bill Could Soon Help You](https://www.technologyreview.com/s/601938/the-ai-that-cut-googles-energy-bill-could-soon-help-you/)
 
-## Natural Language Processing အတြက္ RLအသံုးျပဳပံုတခ်ိဳ့  
-က်မက NLP researcherဆိုေတာ့ NLPနဲ့ပတ္သတ္တဲ့ ဥပမာေတြကို သတ္သတ္ခြဲေရးပါရေစ။  
+## Natural Language Processing အတြက္ RL applicationတခ်ိဳ့  
+က်မက NLP သမားဆိုေတာ့ NLPနဲ့ပတ္သတ္တဲ့ applicationတခ်ိဳ့အေၾကာင္းလည္း ေျပာခ်င္ပါတယ္။  
 အရင္တုန္းက Reinforcement Learningက NLPဘက္မွာ တျခား Machine Learning methodေတြေလာက္ မသံုးၾကဘူး။ RL for NLPကို Researchလုပ္ေနတဲ့ အုပ္စုေတြေတာ့ရွိတယ္။ ဒါေပမယ့္ Deep Learningေလာက္ မမ်ားဘူး။ ျပီးခဲ့တဲ့ ႏွစ္ႏွစ္ သံုးႏွစ္အတြင္းမွာေတာ့ NLPဘက္မွာလည္း RLကေခတ္စားစ ျပဳလာတယ္။ 
 အဓိကအားျဖင့္ RLကိုသံုးတာက Dialog Systemsေတြနဲ့ Question Answeringအတြက္ပါ။ Dialog နဲ့ Question Answering Systemsဆိုတာက အျပင္က Environment(User)နဲ့ ထိေတြ့ဆက္ဆံေနရတာေလ။ အဲေတာ့ Userေျပာတဲ့ Feedbackအေပၚမူတည္ျပီး အလုပ္လုပ္ႏိုင္ဖို့ အေရးၾကီးတယ္။  
 
@@ -54,28 +56,44 @@ Roboticsတို့ Gameတို့အျပင္ Medicine၊ Manufacturing�
 
 Supervised Learning လိုမ်ိဳး Inputေပး၊ Output Predictionလုပ္တဲ့ methodမ်ိဳးဆို Interactionကိုထည့္စဥ္းစားဖို့ေတာ္ေတာ္ခက္တယ္။ Supervised learningကိုလည္း Dialog Systemsေတြမွာသံုးတာမရွိဘူးမဟုတ္ဘူး။ အမ်ားၾကီး ရွိတယ္။ ဒါေပမယ့္ Deep Reinforcement Learningကိုသံုးရင္ User Interactionကိုပါ ထည့္စဥ္းစားလို့ရတယ္။ ဒါ့အျပင္ Supervised Learningလိုမ်ိဳး Reinforcement Learningက ဒီေမးခြန္းေမးရင္ ဒါမ်ိဳးေျဖပါဆိုျပီး သင္ေပးရမယ့္ အေမးအေျဖ Data setေတြအမ်ားၾကီးမလိုဘူး။ Dialog ဆိုတာမ်ိဳးက အမ်ိဳးမ်ိဳးေပါက္ကရေျပာလို့ရတာေလ။ အဲေတာ့ User Interactionကေနလည္း သင္ယူဖို့ အေရးၾကီးတယ္။  
 
-Dialogကေတာ့ အျမင္သာဆံုး ဥပမာေပါ့။ [Information Retrieval and Extraction](https://arxiv.org/pdf/1603.07954.pdf)ဘက္မွာလည္း RLကိုသံုးဖို့ Researchလုပ္ေနတာေတြ ရွိတယ္။ ဥပမာ Computer ကို သူ့ဟာသူ [Googleတတ္ေအာင္ သင္ေပးတာ](https://arxiv.org/abs/1704.04572)တို့ [Manualေတြဖတ္တတ္ေအာင္](http://people.csail.mit.edu/regina/my_papers/civ11.pdf) သင္ေပးတာတို့။ [Parsingတို့](https://cs.stanford.edu/~pliang/papers/sample-aistats2015.pdf)၊ [Text based gamesတို့](https://arxiv.org/abs/1506.08941) အစရွိသျဖင့္ application ေတြမွာလည္း RL ကိုသံုးတယ္။ ဒါက RLကိုNLP မွာဘယ္လိုသံုးလဲဆိုတာ ဥပမာေပးတာပါ။ အေသးစိတ္ကိုေရးရင္ ဒီSectionနဲ့တင္ postကအရမ္းရွည္သြားမွာမို့လို့ ေနာက္မွ အားလို့ စိတ္ကူးေပါက္ရင္ ထပ္ေရးပါ့မယ္။ 
+Dialogကေတာ့ အျမင္သာဆံုး ဥပမာေပါ့။ [Information Retrieval and Extraction](https://arxiv.org/pdf/1603.07954.pdf)ဘက္မွာလည္း RLကိုသံုးတာေတြ ရွိတယ္။ ဥပမာ Computer ကို သူ့ဟာသူ [Googleတတ္ေအာင္ သင္ေပးတာ](https://arxiv.org/abs/1704.04572)တို့ [Manualေတြဖတ္တတ္ေအာင္](http://people.csail.mit.edu/regina/my_papers/civ11.pdf) သင္ေပးတာတို့။ [Parsingတို့](https://cs.stanford.edu/~pliang/papers/sample-aistats2015.pdf)၊ [Text based gamesတို့](https://arxiv.org/abs/1506.08941) အစရွိသျဖင့္ application ေတြမွာလည္း RL ကိုသံုးတယ္။ ဒါက RLကိုNLP မွာဘယ္လိုသံုးလဲဆိုတာ ဥပမာေပးတာပါ။ အေသးစိတ္ကိုေရးရင္ ဒီSectionနဲ့တင္ postကအရမ္းရွည္သြားမွာမို့လို့ ေနာက္မွ အားလို့ စိတ္ကူးေပါက္ရင္ ထပ္ေရးပါ့မယ္။ 
 
 ## RL ရဲ့အစိတ္အပိုင္းမ်ား  
-{To Be Continued}  
+![RL]({{ site.url }}/logs/images/RLIntro/RL.png)  
+{: .center-image}  
+
+Reinforcement Learningကဘာလဲဆိုတာ အေပၚမွာ ေျပာခဲ့တာကို ျပန္ျပီး recapျပန္လုပ္တာေပါ့။ 
+ပံုမွာျပထားတဲ့အတိုင္း Time Step t မွာ Agentက Actionတစ္ခုခုကိုလုပ္လိုက္မယ္။ အစပိုင္းမွာ သူက ဘယ္ Actionကေကာင္းမွန္းမသိေသးဘူး။ အဲေတာ့ ဒီအတိုင္း random action တစ္ခုကိုု Tryၾကည့္တယ္။ သူ့Actionအေပၚမူတည္ျပီး State S_t+1ကေျပာင္းသြားမယ္။ ျပီးရင္ Reward ျပန္ရမယ္။
+
+Policy  
+Policy ဆိုတာ Stateကေန Actionကို Mapလုပ္ေပးတဲ့ functionျဖစ္တယ္။ Agentရဲ့ behaviorကို Policyကဆံုးျဖတ္ေပးတယ္။
+Value Function  
+Value Functionက အနာဂတ္မွာရလာမယ့္ စုစုေပါင္း Rewardကိုခန့္မွန္းတဲ့ Functionျဖစ္တယ္။ ဒီStateမွာေနရင္ ေရရည္မွာ စုစုုေပါင္း Rewardဘယ္ေလာက္ရမယ္ဆိုတာကို Value Functionသံုးျပီးခန့္မွန္းလို့ရတယ္။ မ်ားေသာအားျဖင့္ ဘယ္Actionလုပ္ရမလဲဆိုတဲ့ Policyကိုသင္ယူတာက Value Functionကိုအရင္တြက္ျပီး Value အမ်ားဆံုးေပးမယ့္ Stateနဲ့ Actionကို Greedyရွာတာျဖစ္တယ္။  
+ဥပမာ Maze မွာဆိုု Action က အေရွ့၊ အေနာက္၊ ဘယ္၊ညာဆိုျပီး ရွိတယ္ထားပါေတာ့။ အေရွ့နဲ့ ဘယ္ကိုုသြားရင္ ေခ်ာက္ထဲက်မယ္။ ညာနဲ့ အေနာက္က Safeျဖစ္တယ္။ ဒါေပမယ့္ ညာကတစ္ဆင့္သြားရင္ ခရီးပိုရွည္မယ္၊ အေနာက္ကိုသြားရင္ ျမန္ျမန္ႏိုင္လိမ့္မယ္ဆိုပါဆို့။ ဒါဆိုရင္ အေနာက္အကြက္က Valueကက်န္တာေတြထက္ အမ်ားဆံုးျဖစ္လိမ့္မယ္။ အဲဒီအတြက္ အမ်ားဆံုး Value ရွိတဲ့ဘက္ကို ေရြ့ဖို့ Policyကဆံုးျဖတ္ေပးလိမ့္မယ္။  
+Value functionကိုမရွာဘဲ Policyကိုတန္းသင္တဲ့နည္းေတြလည္းရွိတယ္။
 
 ## Exploration Vs Exploitation  
-{To Be Continued}  
+Agentကို စသင္ေပးတဲ့အခ်ိန္မွာ Value Function ေတြ Policyေတြကိုမသိေသးဘူး။ အဲေတာ့ ဘယ္Actionနဲ့ ဘယ္Stateက Rewardေကာင္းေကာင္းေပးမလဲဆိုတာကို သူ့ဟာသာ Try and Errorစနစ္နဲ့ စမ္းၾကည့္ဖို့လိုတယ္။ ဘယ္Stateမွာ ဘယ္Actionကိုလုပ္ရင္ ဘယ္ Return(Total Reward)ရမယ္။ အဲလို မသိေသးတဲ့ဟာေတြကို ေလွ်ာက္စမ္းတာကို Explorationလို့ေခၚတယ္။
+အဲလိုနဲ့ အမ်ားၾကီးစမ္းၾကည့္ျပီးေတာ့ Environmentရဲ့သေဘာတရားကိုု နည္းနည္းပါးပါး နားလည္လာတဲ့အခါ အဲဒီKnowledgeကို အသံုးခ်ျပီး ကိုယ့္အတြက္ Rewardအမ်ားဆံုးရမယ့္ Actionမ်ိဳးေတြကိုေရြးရမယ္။ ဒါကို Exploitationလို့ေခၚတယ္။ 
+Reinforcement Learningမွာ Explorationနဲ့ Exploitationကို မွ်မွ်တတ လုပ္ဖို့လိုတယ္။ ဥပမာေပးရရင္ ကိုယ္က ပတ္ဝန္းက်င္အသစ္ကို ေျပာင္းသြားတယ္ဆိုပါဆို့။ အဲနားပတ္ဝန္းက်င္မွာ ဘာစားေသာက္ဆိုင္ေတြ ေကာင္းမွန္းမသိဘူး။ အဲေတာ့ စားေသာက္ဆိုင္တစ္ခုခ်င္းစီကို စမ္းစားၾကည့္ဖို့လိုတယ္။ Explorationလုပ္တာေပါ့ေနာ္။ အဲလိုစားၾကည့္ျပီးေတာ့မွ ေနာက္ဆို ကိုယ္ၾကိဳက္တဲ့စားေသာက္ဆိုင္ကိုု ေရြးစားလို့ရတယ္။ ဒါက ကိုယ္သိထားတဲ့ Knowledgeအေပၚမူတည္ျပီး Exploitationလုပ္တာ။ Exploreမလုပ္ဘဲ စားေနက်ဆိုင္ မွာခ်ည္းပဲ စားရင္ တျခားပိုေကာင္းတဲ့ဆိုင္ေတြရွိမွန္း သိမွာမဟုတ္ဘူး။ Exploreခ်ည္းပဲလုပ္ေနလို့ရွိရင္လည္း ကိုယ္အရင္စားေနက်ဆိုင္ေလာက္ မေကာင္းတဲ့ဆိုင္ေတြနဲ့ခ်ညး္ၾကံဳေနရင္ ျပသနာ။
 
 
 ## Supervised Learning နဲ့ဘာကြာသလဲ ??  
-Reinforcement Learningက Agentကေန Environmentကိုထုတ္ေပးတဲ့ Actionေတြပါတယ္။ ကိုယ္အရင္အဆင့္က ထုတ္ေပးတဲ့ Actionက ေနာက္အဆင့္ေတြအေပၚမွာပါ သက္ေရာက္မွဴရွိတယ္။ Chessကစားရင္ ကိုယ္အရင္က ေရႊ့ခဲ့တဲ့ Actionက ေနာက္အဆင့္ေတြမွာ အၾကိဳးသက္ေရာက္မွဴရွိတယ္။ အဆင့္(State)တစ္ခုုစီမွာ Agentက ဘာActionလုပ္ရင္ေကာင္းမလဲဆိုျပီး ဆံုးျဖတ္ရတယ္(Decision Making)။ သူလုပ္လိုက္တဲ့ Actionက Environmentအေပၚ အၾကိဳးသက္ေရာက္မွဴရွိတယ္။ Environmentကေန သူ့Actionအေပၚမူတည္ျပီး သူ့ကိုု ဆုေပးတာျဖစ္ျဖစ္ ဒဏ္ေပးတာျဖစ္ျဖစ္ Feedbackတစ္ခုခုျပန္ေပးတယ္။ 
+Reinforcement Learningက Agentကေန Environmentကိုထုတ္ေပးတဲ့ Actionေတြပါတယ္။ ကိုယ္အရင္အဆင့္က ထုတ္ေပးတဲ့ Actionက ေနာက္အဆင့္ေတြအေပၚမွာပါ သက္ေရာက္မွဴရွိတယ္။ Chessကစားရင္ ကိုယ္အရင္က ေရႊ့ခဲ့တဲ့ Actionက ေနာက္အဆင့္ေတြမွာ အၾကိဳးသက္ေရာက္မွဴရွိတယ္။ အဆင့္(State)တစ္ခုုစီမွာ Agentက ဘာActionလုပ္ရင္ေကာင္းမလဲဆိုျပီး ဆံုးျဖတ္ရတယ္(Decision Making)။ သူလုပ္လိုက္တဲ့ Actionက Environmentအေပၚ အၾကိဳးသက္ေရာက္မွဴရွိတယ္။ Environmentကေန သူ့Actionအေပၚမူတည္ျပီး သူ့ကိုု ဆုေပးတာျဖစ္ျဖစ္ ဒဏ္ေပးတာျဖစ္ျဖစ္ Feedbackတစ္ခုခုျပန္ေပးတယ္။  
+
 Supervised Learningက အဲလိုမဟုတ္ဘူး။ Dataထဲမွာပါတဲ့ Independent Examplesေတြအေပၚ အေျခခံျပီးသင္ယူသြားတာျဖစ္တယ္။ ဒီ Inputမ်ိဳးေတြ့ရင္ ဘယ္လိုOutputမ်ိဳးထုတ္ရမယ္ဆိုတာမ်ိဳးျပသနာေတြအတြက္ အသံုးဝင္တယ္။ 
 ![RL vs SL]({{ site.url }}/logs/images/RLIntro/RLvsSL.png)  
 {: .center-image}
 *Supervised Learning Vs Reinforcement Learning*[^5]
 {: .center}   
 [^5]: [Introduction to Reinforcement Learning - Joelle Pineau](http://videolectures.net/deeplearning2016_pineau_reinforcement_learning/)  
-## Reinforcement Learning ကိုဘယ္လိုေလ့လာရမလဲ ??
-ေအာက္က ၂ခုကေတာ့ က်မကိုယ္တိုင္ သံုးခဲ့တဲ့ Resource ေတြပါ။ အဲဒီ ၂ခုနဲ့တင္ အေျခခံရျပီး တျခား Research Paper ေတြ သူမ်ားေရးထားတဲ့ Open Source Code ေတြကို ဖတ္ရင္ နားလည္ႏိုင္ပါတယ္။
+## Reinforcement Learning ကိုဘယ္လိုေလ့လာရမလဲ ??  
+ဒီPostက RLကို မသိေသးသူေတြအတြက္ မိတ္ဆက္ရံုသက္သက္ပါ။ ဒါဖတ္ျပီး စိတ္ဝင္စားလို့ ေလ့လာခ်င္တယ္ဆိုရင္ ေအာက္က ၃ခုကေတာ့ က်မကိုယ္တိုင္ သံုးခဲ့တဲ့ Resource ေတြပါ။ အဲဒီ ၂ခုနဲ့တင္ အေျခခံရျပီး တျခား Research Paper ေတြ သူမ်ားေရးထားတဲ့ Open Source Code ေတြကို ဖတ္ရင္ နားလည္ႏိုင္ပါတယ္။ David Silverရဲ့ Videoေတြကို အရင္ၾကည့္ျပီး သူနဲ့ဆိုင္တဲ့ Textbookက Chapterေတြကိုလိုက္ဖတ္ၾကည့္ပါ။ ျပီးေတာ့ Exerciseေတြလိုက္လုပ္ၾကည့္ပါ။
 * David Silver’s Reinforcement Learning Lectures [[Videos](https://youtu.be/2pWv7GOvuf0?list=PL7-jPKtc4r78-wCZcQn5IqyuWhBZ8fOxT)][[Notes](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)]
-* [Textbook: Reinforcement Learning: An Introduction ](http://people.inf.elte.hu/lorincz/Files/RL_2006/SuttonBook.pdf)   
-
+* [Textbook: Reinforcement Learning: An Introduction -  ](http://incompleteideas.net/sutton/book/bookdraft2016sep.pdf)  
+* [Exercises: WildML - Learning RL](http://www.wildml.com/2016/10/learning-reinforcement-learning/)
+## မွတ္ခ်က္
+က်မက RLနဲ့ပတ္သတ္ျပီး စေလ့လာတာ သိပ္မၾကာေသးတဲ့ Super Noobပါ။ အမွားပါတာရွိရင္ ေထာက္ျပႏိုင္ပါတယ္။ ျမန္မာစာအေရးအသား မွားေနတာရွိလဲ ေထာက္ျပႏိုုင္ပါတယ္ :P
 ေအာက္က Resourceေတြကေတာ့ က်မကိုယ္တိုင္ မတက္ဖူးေသးတဲ့ နာမည္ၾကီး RL courseနဲ့ Tutorialေတြပါ။ ကိုယ္တိုင္မတက္ဖူးေသးလို့ အသံုးဝင္မဝင္ကိုေတာ့ မေျပာႏိုင္ပါဘူး။  Deep Reinforcement Learning Courseကေတာ့ ေတာ္ေတာ္ေကာင္းတယ္လို့ၾကားပါတယ္။
 * [Udacity Reinforcement Learning Course](https://www.udacity.com/course/reinforcement-learning--ud600)  
 * [Simple Reinforcement Learning with Tensorflow series](https://medium.com/@awjuliani/super-simple-reinforcement-learning-tutorial-part-1-fd544fab149)  
