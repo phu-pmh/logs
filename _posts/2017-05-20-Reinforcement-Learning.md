@@ -31,12 +31,16 @@ share: true
 
 ## Some Applications of Reinforcement Learning     
 Roboticsဘက္မွာ Robotကို အျပင္ေလာကနဲ့ဆက္ဆံျပီး ဆံုးျဖတ္ခ်က္ေတြ ခ်တတ္လာေအာင္ သင္ေပးတဲ့ေနရာမ်ိဳးမွာ RLကိုသံုးတယ္။ ေမာင္းသူမဲ့ ကားေတြ Droneေလးေတြမွာလည္း သူ့ကိုုသံုးတယ္။
-DeepMindရဲ့ AlphaGoအေၾကာင္းကို ေတာ္ေတာ္မ်ားမ်ားၾကားဖူးၾကမွာပါ။ AlphaGoက Reinforcement Learningကိုသံုးထားတာပါ။ Computerကို Gameေတြေဆာ့တတ္ေအာင္ သင္ေပးတဲ့ေနရာမွာ RLကိုအသံုးျပဳတယ္။[^1][^2]  
+DeepMindရဲ့ AlphaGoအေၾကာင္းကို ေတာ္ေတာ္မ်ားမ်ားၾကားဖူးၾကမွာပါ။ AlphaGoက Reinforcement Learningကိုသံုးထားတာပါ။ Computerကို Gameေတြေဆာ့တတ္ေအာင္ သင္ေပးတဲ့ေနရာမွာ RLကိုအသံုးျပဳတယ္။[^1] [^2]  
+
 [^1]: [AlphaGo](https://deepmind.com/research/alphago/)  
+
 [^2]: [Reinforcement learning with unsupervised auxiliary tasks](https://deepmind.com/blog/reinforcement-learning-unsupervised-auxiliary-tasks/)  
 
-Roboticsတို့ Gameတို့အျပင္ Medicine၊ Manufacturingအစရွိသျဖင့္ တျခားနယ္ပယ္ေတြမွာလည္း RLကိုသံုးတယ္။ ဥပမာေပးရရင္ Googleက Reinforcement Learningကိုသံုးျပီး Data Center Cooling ကုန္က်ေငြကို ၄၀ရာခိုင္ႏွဳန္း ေလွ်ာ့ခ်ခဲ့တယ္။[^3][^4]
-[^3]: [DeepMind AI Reduces Google Data Centre Cooling Bill by 40%](https://deepmind.com/blog/deepmind-ai-reduces-google-data-centre-cooling-bill-40/)
+Roboticsတို့ Gameတို့အျပင္ Medicine၊ Manufacturingအစရွိသျဖင့္ တျခားနယ္ပယ္ေတြမွာလည္း RLကိုသံုးတယ္။ ဥပမာေပးရရင္ Googleက Reinforcement Learningကိုသံုးျပီး Data Center Cooling ကုန္က်ေငြကို ၄၀ရာခိုင္ႏွဳန္း ေလွ်ာ့ခ်ခဲ့တယ္။[^3] [^4]  
+
+[^3]: [DeepMind AI Reduces Google Data Centre Cooling Bill by 40%](https://deepmind.com/blog/deepmind-ai-reduces-google-data-centre-cooling-bill-40/)  
+
 [^4]: [The AI That Cut Google’s Energy Bill Could Soon Help You](https://www.technologyreview.com/s/601938/the-ai-that-cut-googles-energy-bill-could-soon-help-you/)
 
 ## Natural Language Processing အတြက္ RLအသံုးျပဳပံုတခ်ိဳ့  
