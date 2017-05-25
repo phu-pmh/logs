@@ -42,7 +42,7 @@ body {
     font-weight: 600;
 
     a {
-      color: $base-color;
+      color: $oc-violet-7;
       &:hover,
       &:focus {
         text-decoration: none;
@@ -81,7 +81,7 @@ body {
   text-transform: uppercase;
 
   a {
-    color: $base-color;
+    color: $$oc-violet-7;
 
     &:hover,
     &:focus {
@@ -96,6 +96,7 @@ body {
 
 .page {
   &-title {
+    color: $oc-violet-7;
     margin-top: 0;
     margin-bottom: 2rem;
     font-size: 2.25em;
@@ -111,7 +112,7 @@ body {
 .post {
 
   &-title {
-    color: oc-violet-8;
+    color: $oc-violet-8;
     margin-top: 0rem;
     margin-bottom: 0.3rem;
     font-size: 2.25em;
@@ -194,7 +195,7 @@ body {
     }
 
     &-title {
-      color: #4a3291;
+      color: $oc-violet-8;
       font-size : 1.3rem;
       font-weight: 500;
     }
@@ -292,6 +293,7 @@ body {
   }
 
   &-title {
+    color: $oc-violet-8;
     font-size: 1.4rem;
     font-weight: 600;
     text-transform: lowercase;
@@ -340,7 +342,7 @@ body {
       }
 
       &-title {
-        color: #4a3291;
+        color: $oc-violet-7;
         font-size : 1.2rem;
         font-weight: 400;
       }
