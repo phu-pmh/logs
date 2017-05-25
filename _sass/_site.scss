@@ -42,7 +42,7 @@ body {
     font-weight: 600;
 
     a {
-      color: $oc-violet-7;
+      color: $base-color;
       &:hover,
       &:focus {
         text-decoration: none;
@@ -96,7 +96,6 @@ body {
 
 .page {
   &-title {
-    color: $oc-violet-7;
     margin-top: 0;
     margin-bottom: 2rem;
     font-size: 2.25em;
