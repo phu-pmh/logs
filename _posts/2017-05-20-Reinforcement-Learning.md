@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Reinforcement Learning မိတ္ဆက္"
-description: "Reinforcement Learning အက်ဥ္းခ်ဳပ္ မိတ္ဆက္"
+title: "Reinforcement Learning မိတ်ဆက်"
+description: "Reinforcement Learning အကျဉ်းချုပ် မိတ်ဆက်"
 date: 2017-05-20
 tags: [Reinforcement Learning]
 comments: true
@@ -10,100 +10,100 @@ share: true
 
 
 **Contents**
-* မိတ္ဆက္  
+* မိတ်ဆက်  
 * Some Applications of Reinforcement Learning 
-* Natural Language Processing မွာ RL ကိုအသံုးျပဳပံု  
-* RL ရဲ့အစိတ္အပိုင္းမ်ား  
+* Natural Language Processing မှာ RL ကိုအသုံးပြုပုံ  
+* RL ရဲ့အစိတ်အပိုင်းများ  
 * Exploration Vs Exploitation  
-* Supervised Learning နဲ့ဘာကြာသလဲ ??    
-* Reinforcement Learning ကိုဘယ္လိုေလ့လာရမလဲ ??
-* မွတ္ခ်က္
+* Supervised Learning နဲ့ဘာကွာသလဲ ??    
+* Reinforcement Learning ကိုဘယ်လိုလေ့လာရမလဲ ??
+* မှတ်ချက်
 {:toc}
 
-## မိတ္ဆက္  
-**Machine Learning** မွာ **Supervised Learning၊ Unsupervised Learning နဲ့ Reinforcement Learning** ဆိုုျပီး ၃မ်ိဳးခြဲလို့ရပါတယ္။ ဒီ Post မွာ အဓိကေျပာခ်င္တာက Reinforcement Learning ပါ။ 
+## မိတ်ဆက်  
+**Machine Learning** မှာ **Supervised Learning၊ Unsupervised Learning နဲ့ Reinforcement Learning** ဆိုုပြီး ၃မျိုးခွဲလို့ရပါတယ်။ ဒီ Post မှာ အဓိကပြောချင်တာက Reinforcement Learning ပါ။ 
 
-**Supervised Learning** ကေတာ့ Data Science and Analyticsလုပ္တဲ့ လူေတြနဲ့ အရင္းႏွီးဆံုး ျဖစ္မွာပါ။ Supervised Learning က လြယ္လြယ္ေျပာရရင္ ကိုယ့္မွာရွိတဲ့ Labeled Data ကိုၾကည့္ျပီးေတာ့ ဒီ Input မ်ိဳးဆိုရင္ ဘယ္လို Output Label မ်ိဳးထုတ္ေပးရမလဲဆိုတာကိုု ကြန္ျပဴတာကိုသင္ခိုင္းတာပါ(Training)။ ဥပမာ ကြန္ျပဴတာကို ပန္းသီးပံုေတြအမ်ားၾကီးျပျပီး ဒါပန္းသီး ဒါပန္းသီးဆိုျပီးသင္ေပးမယ္။ တျခား မျမင္ဖူးေသးတဲ့ပန္းသီးပံုေတြလာရင္ ပန္းသီးလို့ခန့္မွန္းတတ္ေအာင္ သင္ေပးတာမ်ိဳးပါ။
+**Supervised Learning** ကတော့ Data Science and Analyticsလုပ်တဲ့ လူတွေနဲ့ အရင်းနှီးဆုံး ဖြစ်မှာပါ။ Supervised Learning က လွယ်လွယ်ပြောရရင် ကိုယ့်မှာရှိတဲ့ Labeled Data ကိုကြည့်ပြီးတော့ ဒီ Input မျိုးဆိုရင် ဘယ်လို Output Label မျိုးထုတ်ပေးရမလဲဆိုတာကိုု ကွန်ပြူတာကိုသင်ခိုင်းတာပါ(Training)။ ဥပမာ ကွန်ပြူတာကို ပန်းသီးပုံတွေအများကြီးပြပြီး ဒါပန်းသီး ဒါပန်းသီးဆိုပြီးသင်ပေးမယ်။ တခြား မမြင်ဖူးသေးတဲ့ပန်းသီးပုံတွေလာရင် ပန်းသီးလို့ခန့်မှန်းတတ်အောင် သင်ပေးတာမျိုးပါ။
 
-**Unsupervised Learning** ကေတာ့ Label ရယ္လို့မရွိဘူး။ ဒီ Input ေပးရင္ ဒီလို Label မ်ိဳးထုတ္ေပးရမယ္ဆိုျပီး သတ္သတ္မွတ္မွတ္ သင္မေပးဘူး။ Clustering က Unsupervised Learning တစ္မ်ိဳးပါပဲ။ အလြယ္ဆံုး ဥပမာေပးရရင္ ေၾကာင္ပံုေတြနဲ့ေခြးပံုေတြ အမ်ားၾကီးကို ကြန္ျပဴတာထဲထည့္ေပးျပီး ကြန္ျပဴတာကို အုပ္စု၂ခု (or ၃ခု) ခြဲတတ္ေအာင္ သင္ေပးတာပါ။ သူ ့ကို ပံုေတြျပျပီး ဒါကေၾကာင္ ဒါကေခြးဆိုျပီး Label တပ္ေပးျပီး supervise ေပးစရာမလိုုဘူး။ သူ့ဘာသူၾကည့္ျပီး ဒီေကာင္ေလးေတြကရုပ္ဆင္တယ္ တစ္အုပ္စုေနဆိုျပီး အစုခြဲလိုက္တာမ်ိဳး။ 
+**Unsupervised Learning** ကတော့ Label ရယ်လို့မရှိဘူး။ ဒီ Input ပေးရင် ဒီလို Label မျိုးထုတ်ပေးရမယ်ဆိုပြီး သတ်သတ်မှတ်မှတ် သင်မပေးဘူး။ Clustering က Unsupervised Learning တစ်မျိုးပါပဲ။ အလွယ်ဆုံး ဥပမာပေးရရင် ကြောင်ပုံတွေနဲ့ခွေးပုံတွေ အများကြီးကို ကွန်ပြူတာထဲထည့်ပေးပြီး ကွန်ပြူတာကို အုပ်စု၂ခု (or ၃ခု) ခွဲတတ်အောင် သင်ပေးတာပါ။ သူ ့ကို ပုံတွေပြပြီး ဒါကကြောင် ဒါကခွေးဆိုပြီး Label တပ်ပေးပြီး supervise ပေးစရာမလိုုဘူး။ သူ့ဘာသူကြည့်ပြီး ဒီကောင်လေးတွေကရုပ်ဆင်တယ် တစ်အုပ်စုနေဆိုပြီး အစုခွဲလိုက်တာမျိုး။ 
 
-**Reinforcement Learning** ကေတာ့ Goal-directed Agentကို အျပင္ေလာက(Environment)နဲ့ ထိေတြ့ခိုင္းျပီး Environmentကျပန္ေပးတဲ့ Feedbackအေပၚမူတည္ျပီး ဒီလိုအေျခအေနမ်ိဳးဆို ဘာActionလုပ္သင့္တယ္ဆိုျပီးသင္တာပါ။ ဆုေပး ဒဏ္ေပးစနစ္မ်ိဳးလို့လဲ  ယူဆႏိုင္ပါတယ္။ ဥပမာ - Robot ကို Mazeထဲကဘယ္လိုထြက္မလဲ သင္ခိုင္းတာမ်ိဳး။ လမ္းေလွ်ာက္ရင္း နံရံရွိတဲ့ဆီကိုဝင္တိုက္ရင္ ဒဏ္ေပးမယ္၊ ဝင္မတိုက္ဘဲ ေဘးကိုေကြ့သြားရင္ ဆုေပးမယ္။ Mazeအျပင္ကိုထြက္ႏိုင္ရင္ ရတဲ့ဆုကအမ်ားဆံုး။ အဲလိုနဲ့ သူက ေရရွည္မွာ ဆုမ်ားမ်ားရတဲ့Actionေတြ လုပ္တတ္ေအာင္ သင္ယူသြားတာမ်ိဳးပါ။ ***အေရးအၾကီးဆံုးက ေရရွည္မွာဆုအမ်ားဆံုးရဖို့ျဖစ္တယ္။*** အဲဒီအတြက္ တစ္ခါတစ္ေလမွာ လက္ငင္းရႏိုင္တဲ့ ဆုအေသးေလးေတြကိုု စြန့္လႊတ္ျပီး ဒီထက္ပိုုၾကီးတဲ့ အနာဂတ္ဆုုလာဒ္ေတြကို ေစာင့္တတ္ဖို့လဲလိုတယ္။  
+**Reinforcement Learning** ကတော့ Goal-directed Agentကို အပြင်လောက(Environment)နဲ့ ထိတွေ့ခိုင်းပြီး Environmentကပြန်ပေးတဲ့ Feedbackအပေါ်မူတည်ပြီး ဒီလိုအခြေအနေမျိုးဆို ဘာActionလုပ်သင့်တယ်ဆိုပြီးသင်တာပါ။ ဆုပေး ဒဏ်ပေးစနစ်မျိုးလို့လဲ  ယူဆနိုင်ပါတယ်။ ဥပမာ - Robot ကို Mazeထဲကဘယ်လိုထွက်မလဲ သင်ခိုင်းတာမျိုး။ လမ်းလျှောက်ရင်း နံရံရှိတဲ့ဆီကိုဝင်တိုက်ရင် ဒဏ်ပေးမယ်၊ ဝင်မတိုက်ဘဲ ဘေးကိုကွေ့သွားရင် ဆုပေးမယ်။ Mazeအပြင်ကိုထွက်နိုင်ရင် ရတဲ့ဆုကအများဆုံး။ အဲလိုနဲ့ သူက ရေရှည်မှာ ဆုများများရတဲ့Actionတွေ လုပ်တတ်အောင် သင်ယူသွားတာမျိုးပါ။ ***အရေးအကြီးဆုံးက ရေရှည်မှာဆုအများဆုံးရဖို့ဖြစ်တယ်။*** အဲဒီအတွက် တစ်ခါတစ်လေမှာ လက်ငင်းရနိုင်တဲ့ ဆုအသေးလေးတွေကိုု စွန့်လွှတ်ပြီး ဒီထက်ပိုုကြီးတဲ့ အနာဂတ်ဆုုလာဒ်တွေကို စောင့်တတ်ဖို့လဲလိုတယ်။  
 
-ဥပမာ စစ္တုရင္ကစားရင္ ကိုယ့္အေရွ့မွာ အေကာင္အေသးေလးေတြ စားလို့ရတာရွိလိမ့္မယ္။ အဲလိုစားလိုုက္ရင္ ဆုရလိမ့္မယ္။ ဒါေပမယ့္ စားလိုက္ရင္ ေရရွည္မွာေကာင္းခ်င္မွ ေကာင္းမယ္။ ဟိုဘက္က Strategy အရ သူတို့အေကာင္အၾကီးေတြေရြႊ့ဖို့ အေကာင္အေသး(Pawn)ေတြကို တမင္ခ်ေၾကြးထားတာလည္း ျဖစ္ႏိုင္တယ္။ ဒါေၾကာင့္ **Immediate Reward** (လက္ငင္းဆု)ထက္ **Cumulative Rewardအမ်ားဆံုးရမယ့္ Action** ေတြလုပ္တတ္ေအာင္ သင္ယူရပါမယ္။ ဒါကေတာ့ Reinforcement Learning ရဲ့အေျခခံ သေဘာတရားပါ။ 
+ဥပမာ စစ်တုရင်ကစားရင် ကိုယ့်အရှေ့မှာ အကောင်အသေးလေးတွေ စားလို့ရတာရှိလိမ့်မယ်။ အဲလိုစားလိုုက်ရင် ဆုရလိမ့်မယ်။ ဒါပေမယ့် စားလိုက်ရင် ရေရှည်မှာကောင်းချင်မှ ကောင်းမယ်။ ဟိုဘက်က Strategy အရ သူတို့အကောင်အကြီးတွေရွွှေ့ဖို့ အကောင်အသေး(Pawn)တွေကို တမင်ချကြွေးထားတာလည်း ဖြစ်နိုင်တယ်။ ဒါကြောင့် **Immediate Reward** (လက်ငင်းဆု)ထက် **Cumulative Rewardအများဆုံးရမယ့် Action** တွေလုပ်တတ်အောင် သင်ယူရပါမယ်။ ဒါကတော့ Reinforcement Learning ရဲ့အခြေခံ သဘောတရားပါ။ 
 
 ## Some Applications of Reinforcement Learning     
-Roboticsဘက္မွာ Robotကို အျပင္ေလာကနဲ့ဆက္ဆံျပီး ဆံုးျဖတ္ခ်က္ေတြ ခ်တတ္လာေအာင္ သင္ေပးတဲ့ေနရာမ်ိဳးမွာ RLကိုသံုးတယ္။ ေမာင္းသူမဲ့ ကားေတြ Droneေလးေတြမွာလည္း သူ့ကိုုသံုးတယ္။  
+Roboticsဘက်မှာ Robotကို အပြင်လောကနဲ့ဆက်ဆံပြီး ဆုံးဖြတ်ချက်တွေ ချတတ်လာအောင် သင်ပေးတဲ့နေရာမျိုးမှာ RLကိုသုံးတယ်။ မောင်းသူမဲ့ ကားတွေ Droneလေးတွေမှာလည်း သူ့ကိုုသုံးတယ်။  
 
-DeepMindရဲ့ AlphaGoအေၾကာင္းကို ေတာ္ေတာ္မ်ားမ်ားၾကားဖူးၾကမွာပါ။ AlphaGoက Reinforcement Learningကိုသံုးထားတာပါ။ Computerကို Gameေတြေဆာ့တတ္ေအာင္ သင္ေပးတဲ့ေနရာမွာ RLကိုအသံုးျပဳတယ္။[^1][^2]  
+DeepMindရဲ့ AlphaGoအကြောင်းကို တော်တော်များများကြားဖူးကြမှာပါ။ AlphaGoက Reinforcement Learningကိုသုံးထားတာပါ။ Computerကို Gameတွေဆော့တတ်အောင် သင်ပေးတဲ့နေရာမှာ RLကိုအသုံးပြုတယ်။[^1][^2]  
 
 [^1]: [AlphaGo](https://deepmind.com/research/alphago/)  
 
 [^2]: [Reinforcement learning with unsupervised auxiliary tasks](https://deepmind.com/blog/reinforcement-learning-unsupervised-auxiliary-tasks/)  
 
-Roboticsတို့ Gameတို့အျပင္ Medicine၊ Manufacturingအစရွိသျဖင့္ တျခားနယ္ပယ္ေတြမွာလည္း RLကိုသံုးတယ္။ ဥပမာေပးရရင္ Googleက Reinforcement Learningကိုသံုးျပီး Data Center Cooling ကုန္က်ေငြကို ၄၀ရာခိုင္ႏွဳန္း ေလွ်ာ့ခ်ခဲ့တယ္။[^3][^4]  
+Roboticsတို့ Gameတို့အပြင် Medicine၊ Manufacturingအစရှိသဖြင့် တခြားနယ်ပယ်တွေမှာလည်း RLကိုသုံးတယ်။ ဥပမာပေးရရင် Googleက Reinforcement Learningကိုသုံးပြီး Data Center Cooling ကုန်ကျငွေကို ၄၀ရာခိုင်နှုန်း လျှော့ချခဲ့တယ်။[^3][^4]  
 
 [^3]: [DeepMind AI Reduces Google Data Centre Cooling Bill by 40%](https://deepmind.com/blog/deepmind-ai-reduces-google-data-centre-cooling-bill-40/)  
 
 [^4]: [The AI That Cut Google’s Energy Bill Could Soon Help You](https://www.technologyreview.com/s/601938/the-ai-that-cut-googles-energy-bill-could-soon-help-you/)
 
-## Natural Language Processing အတြက္ RL applicationတခ်ိဳ့  
-က်မက NLP သမားဆိုေတာ့ NLPနဲ့ပတ္သတ္တဲ့ applicationတခ်ိဳ့အေၾကာင္းလည္း ေျပာခ်င္ပါတယ္။  
-အရင္တုန္းက Reinforcement Learningက NLPဘက္မွာ တျခား Machine Learning methodေတြေလာက္ မသံုးၾကဘူး။ RL for NLPကို Researchလုပ္ေနတဲ့ အုပ္စုေတြေတာ့ရွိတယ္။ ဒါေပမယ့္ Deep Learningေလာက္ မမ်ားဘူး။ ျပီးခဲ့တဲ့ ႏွစ္ႏွစ္ သံုးႏွစ္အတြင္းမွာေတာ့ NLPဘက္မွာလည္း RLကေခတ္စားစ ျပဳလာတယ္။ 
-အဓိကအားျဖင့္ RLကိုသံုးတာက Dialog Systemsေတြနဲ့ Question Answeringအတြက္ပါ။ Dialog နဲ့ Question Answering Systemsဆိုတာက အျပင္က Environment(User)နဲ့ ထိေတြ့ဆက္ဆံေနရတာေလ။ အဲေတာ့ Userေျပာတဲ့ Feedbackအေပၚမူတည္ျပီး အလုပ္လုပ္ႏိုင္ဖို့ အေရးၾကီးတယ္။  
+## Natural Language Processing အတွက် RL applicationတချို့  
+ကျမက NLP သမားဆိုတော့ NLPနဲ့ပတ်သတ်တဲ့ applicationတချို့အကြောင်းလည်း ပြောချင်ပါတယ်။  
+အရင်တုန်းက Reinforcement Learningက NLPဘက်မှာ တခြား Machine Learning methodတွေလောက် မသုံးကြဘူး။ RL for NLPကို Researchလုပ်နေတဲ့ အုပ်စုတွေတော့ရှိတယ်။ ဒါပေမယ့် Deep Learningလောက် မများဘူး။ ပြီးခဲ့တဲ့ နှစ်နှစ် သုံးနှစ်အတွင်းမှာတော့ NLPဘက်မှာလည်း RLကခေတ်စားစ ပြုလာတယ်။ 
+အဓိကအားဖြင့် RLကိုသုံးတာက Dialog Systemsတွေနဲ့ Question Answeringအတွက်ပါ။ Dialog နဲ့ Question Answering Systemsဆိုတာက အပြင်က Environment(User)နဲ့ ထိတွေ့ဆက်ဆံနေရတာလေ။ အဲတော့ Userပြောတဲ့ Feedbackအပေါ်မူတည်ပြီး အလုပ်လုပ်နိုင်ဖို့ အရေးကြီးတယ်။  
 
-ဥပမာ Chatbotဆိုပါေတာ့။ ေအာက္က Google Assistantကို အိမ္ကေန Sentosaကို ဘယ္လိုသြားရမလဲလို့ေမးတဲ့ dialogကိုၾကည့္ၾကည့္ပါ။ Chatbotက ေမးခြန္းကိုၾကည့္တယ္၊ ေျဖႏိုင္ဖို့ၾကိဳးစားတယ္၊ ဒါေပမယ့္ အိမ္လိပ္စာကို မသိဘူး။ မသိေတာ့ Userကိုျပန္ေမးမယ္။ Userကဘာဆက္ေျပာလည္း အေပၚမူတည္ျပီး လုပ္စရာရွိတာ ဆက္လုပ္မယ္။ Userနဲ့ botနဲ့ၾကားမွာ Interactionရွိတယ္။ ဒါ့အျပင္ စကားေျပာသြားတာလည္း အေပၚနဲ့ ေအာက္နဲ့ ဆက္စပ္မွဴ Sequenceရွိတယ္။
+ဥပမာ Chatbotဆိုပါတော့။ အောက်က Google Assistantကို အိမ်ကနေ Sentosaကို ဘယ်လိုသွားရမလဲလို့မေးတဲ့ dialogကိုကြည့်ကြည့်ပါ။ Chatbotက မေးခွန်းကိုကြည့်တယ်၊ ဖြေနိုင်ဖို့ကြိုးစားတယ်၊ ဒါပေမယ့် အိမ်လိပ်စာကို မသိဘူး။ မသိတော့ Userကိုပြန်မေးမယ်။ Userကဘာဆက်ပြောလည်း အပေါ်မူတည်ပြီး လုပ်စရာရှိတာ ဆက်လုပ်မယ်။ Userနဲ့ botနဲ့ကြားမှာ Interactionရှိတယ်။ ဒါ့အပြင် စကားပြောသွားတာလည်း အပေါ်နဲ့ အောက်နဲ့ ဆက်စပ်မှူ Sequenceရှိတယ်။
 
 ![Chatbot]({{ site.url }}/logs/images/RLIntro/GoogleAssistant.jpg)
 
-Supervised Learning လိုမ်ိဳး Inputေပး၊ Output Predictionလုပ္တဲ့ methodမ်ိဳးဆို Interactionကိုထည့္စဥ္းစားဖို့ေတာ္ေတာ္ခက္တယ္။ Supervised learningကိုလည္း Dialog Systemsေတြမွာသံုးတာမရွိဘူးမဟုတ္ဘူး။ အမ်ားၾကီး ရွိတယ္။ ဒါေပမယ့္ Deep Reinforcement Learningကိုသံုးရင္ User Interactionကိုပါ ထည့္စဥ္းစားလို့ရတယ္။ Dialog ဆိုတာမ်ိဳးက အမ်ိဳးမ်ိဳးေပါက္ကရေျပာလို့ရတာေလ။ အဲေတာ့ User Interactionကေနလည္း သင္ယူဖို့ အေရးၾကီးတယ္။  
+Supervised Learning လိုမျိုး Inputပေး၊ Output Predictionလုပ်တဲ့ methodမျိုးဆို Interactionကိုထည့်စဉ်းစားဖို့တော်တော်ခက်တယ်။ Supervised learningကိုလည်း Dialog Systemsတွေမှာသုံးတာမရှိဘူးမဟုတ်ဘူး။ အများကြီး ရှိတယ်။ ဒါပေမယ့် Deep Reinforcement Learningကိုသုံးရင် User Interactionကိုပါ ထည့်စဉ်းစားလို့ရတယ်။ Dialog ဆိုတာမျိုးက အမျိုးမျိုးပေါက်ကရပြောလို့ရတာလေ။ အဲတော့ User Interactionကနေလည်း သင်ယူဖို့ အရေးကြီးတယ်။  
 
-Dialogကေတာ့ အျမင္သာဆံုး ဥပမာေပါ့။ [Information Retrieval and Extraction](https://arxiv.org/pdf/1603.07954.pdf)ဘက္မွာလည္း RLကိုသံုးတာေတြ ရွိတယ္။ ဥပမာ Computer ကို သူ့ဟာသူ [Googleတတ္ေအာင္ သင္ေပးတာ](https://arxiv.org/abs/1704.04572)တို့ [Manualေတြဖတ္တတ္ေအာင္](http://people.csail.mit.edu/regina/my_papers/civ11.pdf) သင္ေပးတာတို့။ [Parsingတို့](https://cs.stanford.edu/~pliang/papers/sample-aistats2015.pdf)၊ [Text based gamesတို့](https://arxiv.org/abs/1506.08941) အစရွိသျဖင့္ application ေတြမွာလည္း RL ကိုသံုးတယ္။  
+Dialogကတော့ အမြင်သာဆုံး ဥပမာပေါ့။ [Information Retrieval and Extraction](https://arxiv.org/pdf/1603.07954.pdf)ဘက်မှာလည်း RLကိုသုံးတာတွေ ရှိတယ်။ ဥပမာ Computer ကို သူ့ဟာသူ [Googleတတ်အောင် သင်ပေးတာ](https://arxiv.org/abs/1704.04572)တို့ [Manualတွေဖတ်တတ်အောင်](http://people.csail.mit.edu/regina/my_papers/civ11.pdf) သင်ပေးတာတို့။ [Parsingတို့](https://cs.stanford.edu/~pliang/papers/sample-aistats2015.pdf)၊ [Text based gamesတို့](https://arxiv.org/abs/1506.08941) အစရှိသဖြင့် application တွေမှာလည်း RL ကိုသုံးတယ်။  
 
-ဒါက RLကိုNLP မွာဘယ္လိုသံုးလဲဆိုတာ ဥပမာေပးတာပါ။ အေသးစိတ္ကိုေရးရင္ ဒီSectionနဲ့တင္ postကအရမ္းရွည္သြားမွာမို့လို့ ေနာက္မွ အားလို့ စိတ္ကူးေပါက္ရင္ ထပ္ေရးပါ့မယ္။ 
+ဒါက RLကိုNLP မှာဘယ်လိုသုံးလဲဆိုတာ ဥပမာပေးတာပါ။ အသေးစိတ်ကိုရေးရင် ဒီSectionနဲ့တင် postကအရမ်းရှည်သွားမှာမို့လို့ နောက်မှ အားလို့ စိတ်ကူးပေါက်ရင် ထပ်ရေးပါ့မယ်။ 
 
-## RL ရဲ့အစိတ္အပိုင္းမ်ား  
+## RL ရဲ့အစိတ်အပိုင်းများ  
 ![RL]({{ site.url }}/logs/images/RLIntro/RL.png)  
 {: .center-image}  
 
-Reinforcement Learningကဘာလဲဆိုတာ အေပၚမွာ ေျပာခဲ့တာကို ျပန္ျပီး recapျပန္လုပ္တာေပါ့။ 
-ပံုမွာျပထားတဲ့အတိုင္း Time Step t မွာ Agentက Actionတစ္ခုခုကိုလုပ္လိုက္မယ္။ အစပိုင္းမွာ သူက ဘယ္ Actionကေကာင္းမွန္းမသိေသးဘူး။ အဲေတာ့ ဒီအတိုင္း random action တစ္ခုကိုု Tryၾကည့္တယ္။ သူ့Actionအေပၚမူတည္ျပီး State S<sub>t+1</sub>ကေျပာင္းသြားမယ္။ ျပီးရင္ Reward ျပန္ရမယ္။
+Reinforcement Learningကဘာလဲဆိုတာ အပေါ်မှာ ပြောခဲ့တာကို ပြန်ပြီး recapပြန်လုပ်တာပေါ့။ 
+ပုံမှာပြထားတဲ့အတိုင်း Time Step t မှာ Agentက Actionတစ်ခုခုကိုလုပ်လိုက်မယ်။ အစပိုင်းမှာ သူက ဘယ် Actionကကောင်းမှန်းမသိသေးဘူး။ အဲတော့ ဒီအတိုင်း random action တစ်ခုကိုု Tryကြည့်တယ်။ သူ့Actionအပေါ်မူတည်ပြီး State S<sub>t+1</sub>ကပြောင်းသွားမယ်။ ပြီးရင် Reward ပြန်ရမယ်။
 
 ### Policy  
-Policy ဆိုတာ Stateကေန Actionကို Mapလုပ္ေပးတဲ့ functionျဖစ္တယ္။ Agentရဲ့ behaviorကို Policyကဆံုးျဖတ္ေပးတယ္။
+Policy ဆိုတာ Stateကနေ Actionကို Mapလုပ်ပေးတဲ့ functionဖြစ်တယ်။ Agentရဲ့ behaviorကို Policyကဆုံးဖြတ်ပေးတယ်။
 
 ### Value Function  
-Value Functionက အနာဂတ္မွာရလာမယ့္ စုစုေပါင္း Rewardကိုခန့္မွန္းတဲ့ Functionျဖစ္တယ္။ ဒီStateမွာေနရင္ ေရရည္မွာ စုစုုေပါင္း Rewardဘယ္ေလာက္ရမယ္ဆိုတာကို Value Functionသံုးျပီးခန့္မွန္းလို့ရတယ္။ မ်ားေသာအားျဖင့္ ဘယ္Actionလုပ္ရမလဲဆိုတဲ့ Policyကိုသင္ယူတာက Value Functionကိုအရင္တြက္ျပီး Value အမ်ားဆံုးေပးမယ့္ Stateနဲ့ Actionကို Greedyရွာတာျဖစ္တယ္။  
+Value Functionက အနာဂတ်မှာရလာမယ့် စုစုပေါင်း Rewardကိုခန့်မှန်းတဲ့ Functionဖြစ်တယ်။ ဒီStateမှာနေရင် ရေရည်မှာ စုစုုပေါင်း Rewardဘယ်လောက်ရမယ်ဆိုတာကို Value Functionသုံးပြီးခန့်မှန်းလို့ရတယ်။ များသောအားဖြင့် ဘယ်Actionလုပ်ရမလဲဆိုတဲ့ Policyကိုသင်ယူတာက Value Functionကိုအရင်တွက်ပြီး Value အများဆုံးပေးမယ့် Stateနဲ့ Actionကို Greedyရှာတာဖြစ်တယ်။  
 
-ဥပမာ Maze မွာဆိုု Action က အေရွ့၊ အေနာက္၊ ဘယ္၊ညာဆိုျပီး ရွိတယ္ထားပါေတာ့။ အေရွ့နဲ့ ဘယ္ကိုုသြားရင္ ေခ်ာက္ထဲက်မယ္။ ညာနဲ့ အေနာက္က Safeျဖစ္တယ္။ ဒါေပမယ့္ ညာကတစ္ဆင့္သြားရင္ ခရီးပိုရွည္မယ္၊ အေနာက္ကိုသြားရင္ ျမန္ျမန္ႏိုင္လိမ့္မယ္ဆိုပါဆို့။ ဒါဆိုရင္ အေနာက္အကြက္က Valueကက်န္တာေတြထက္ အမ်ားဆံုးျဖစ္လိမ့္မယ္။ အဲဒီအတြက္ အမ်ားဆံုး Value ရွိတဲ့ဘက္ကို ေရြ့ဖို့ Policyကဆံုးျဖတ္ေပးလိမ့္မယ္။  
-Value functionကိုမရွာဘဲ Policyကိုတန္းသင္တဲ့နည္းေတြလည္းရွိတယ္။
+ဥပမာ Maze မှာဆိုု Action က အရှေ့၊ အနောက်၊ ဘယ်၊ညာဆိုပြီး ရှိတယ်ထားပါတော့။ အရှေ့နဲ့ ဘယ်ကိုုသွားရင် ချောက်ထဲကျမယ်။ ညာနဲ့ အနောက်က Safeဖြစ်တယ်။ ဒါပေမယ့် ညာကတစ်ဆင့်သွားရင် ခရီးပိုရှည်မယ်၊ အနောက်ကိုသွားရင် မြန်မြန်နိုင်လိမ့်မယ်ဆိုပါဆို့။ ဒါဆိုရင် အနောက်အကွက်က Valueကကျန်တာတွေထက် အများဆုံးဖြစ်လိမ့်မယ်။ အဲဒီအတွက် အများဆုံး Value ရှိတဲ့ဘက်ကို ရွေ့ဖို့ Policyကဆုံးဖြတ်ပေးလိမ့်မယ်။  
+Value functionကိုမရှာဘဲ Policyကိုတန်းသင်တဲ့နည်းတွေလည်းရှိတယ်။
 
 ## Exploration Vs Exploitation  
-Agentကို စသင္ေပးတဲ့အခ်ိန္မွာ Value Function ေတြ Policyေတြကိုမသိေသးဘူး။ အဲေတာ့ ဘယ္Actionနဲ့ ဘယ္Stateက Rewardေကာင္းေကာင္းေပးမလဲဆိုတာကို သူ့ဟာသာ Trial and Errorစနစ္နဲ့ စမ္းၾကည့္ဖို့လိုတယ္။ ဘယ္Stateမွာ ဘယ္Actionကိုလုပ္ရင္ ဘယ္ Return(Total Reward)ရမယ္။ အဲလို မသိေသးတဲ့ဟာေတြကို ေလွ်ာက္စမ္းတာကို Explorationလို့ေခၚတယ္။
-အဲလိုနဲ့ အမ်ားၾကီးစမ္းၾကည့္ျပီးေတာ့ Environmentရဲ့သေဘာတရားကိုု နည္းနည္းပါးပါး နားလည္လာတဲ့အခါ အဲဒီKnowledgeကို အသံုးခ်ျပီး ကိုယ့္အတြက္ Rewardအမ်ားဆံုးရမယ့္ Actionမ်ိဳးေတြကိုေရြးရမယ္။ ဒါကို Exploitationလို့ေခၚတယ္။ 
+Agentကို စသင်ပေးတဲ့အချိန်မှာ Value Function တွေ Policyတွေကိုမသိသေးဘူး။ အဲတော့ ဘယ်Actionနဲ့ ဘယ်Stateက Rewardကောင်းကောင်းပေးမလဲဆိုတာကို သူ့ဟာသာ Trial and Errorစနစ်နဲ့ စမ်းကြည့်ဖို့လိုတယ်။ ဘယ်Stateမှာ ဘယ်Actionကိုလုပ်ရင် ဘယ် Return(Total Reward)ရမယ်။ အဲလို မသိသေးတဲ့ဟာတွေကို လျှောက်စမ်းတာကို Explorationလို့ခေါ်တယ်။
+အဲလိုနဲ့ အများကြီးစမ်းကြည့်ပြီးတော့ Environmentရဲ့သဘောတရားကိုု နည်းနည်းပါးပါး နားလည်လာတဲ့အခါ အဲဒီKnowledgeကို အသုံးချပြီး ကိုယ့်အတွက် Rewardအများဆုံးရမယ့် Actionမျိုးတွေကိုရွေးရမယ်။ ဒါကို Exploitationလို့ခေါ်တယ်။ 
 
-Reinforcement Learningမွာ Explorationနဲ့ Exploitationကို မွ်မွ်တတ လုပ္ဖို့လိုတယ္။ ဥပမာေပးရရင္ ကိုယ္က ပတ္ဝန္းက်င္အသစ္ကို ေျပာင္းသြားတယ္ဆိုပါဆို့။ အဲနားပတ္ဝန္းက်င္မွာ ဘာစားေသာက္ဆိုင္ေတြ ေကာင္းမွန္းမသိဘူး။ အဲေတာ့ စားေသာက္ဆိုင္တစ္ခုခ်င္းစီကို စမ္းစားၾကည့္ဖို့လိုတယ္။ Explorationလုပ္တာေပါ့ေနာ္။ အဲလိုစားၾကည့္ျပီးေတာ့မွ ေနာက္ဆို ကိုယ္ၾကိဳက္တဲ့စားေသာက္ဆိုင္ကိုု ေရြးစားလို့ရတယ္။ ဒါက ကိုယ္သိထားတဲ့ Knowledgeအေပၚမူတည္ျပီး Exploitationလုပ္တာ။ Exploreမလုပ္ဘဲ စားေနက်ဆိုင္ မွာခ်ည္းပဲ စားရင္ တျခားပိုေကာင္းတဲ့ဆိုင္ေတြရွိမွန္း သိမွာမဟုတ္ဘူး။ Exploreခ်ည္းပဲလုပ္ေနလို့ရွိရင္လည္း ကိုယ္အရင္စားေနက်ဆိုင္ေလာက္ မေကာင္းတဲ့ဆိုင္ေတြနဲ့ခ်ညး္ၾကံဳေနရင္ ျပသနာ။
+Reinforcement Learningမှာ Explorationနဲ့ Exploitationကို မျှမျှတတ လုပ်ဖို့လိုတယ်။ ဥပမာပေးရရင် ကိုယ်က ပတ်ဝန်းကျင်အသစ်ကို ပြောင်းသွားတယ်ဆိုပါဆို့။ အဲနားပတ်ဝန်းကျင်မှာ ဘာစားသောက်ဆိုင်တွေ ကောင်းမှန်းမသိဘူး။ အဲတော့ စားသောက်ဆိုင်တစ်ခုချင်းစီကို စမ်းစားကြည့်ဖို့လိုတယ်။ Explorationလုပ်တာပေါ့နော်။ အဲလိုစားကြည့်ပြီးတော့မှ နောက်ဆို ကိုယ်ကြိုက်တဲ့စားသောက်ဆိုင်ကိုု ရွေးစားလို့ရတယ်။ ဒါက ကိုယ်သိထားတဲ့ Knowledgeအပေါ်မူတည်ပြီး Exploitationလုပ်တာ။ Exploreမလုပ်ဘဲ စားနေကျဆိုင် မှာချည်းပဲ စားရင် တခြားပိုကောင်းတဲ့ဆိုင်တွေရှိမှန်း သိမှာမဟုတ်ဘူး။ Exploreချည်းပဲလုပ်နေလို့ရှိရင်လည်း ကိုယ်အရင်စားနေကျဆိုင်လောက် မကောင်းတဲ့ဆိုင်တွေနဲ့ချညး်ကြုံနေရင် ပြသနာ။
 
 
-## Supervised Learning နဲ့ဘာကြာသလဲ ??  
-Reinforcement Learningက Agentကေန Environmentကိုထုတ္ေပးတဲ့ Actionေတြပါတယ္။ ကိုယ္အရင္အဆင့္က ထုတ္ေပးတဲ့ Actionက ေနာက္အဆင့္ေတြအေပၚမွာပါ သက္ေရာက္မွဴရွိတယ္။ Chessကစားရင္ ကိုယ္အရင္က ေရႊ့ခဲ့တဲ့ Actionက ေနာက္အဆင့္ေတြမွာ အၾကိဳးသက္ေရာက္မွဴရွိတယ္။ အဆင့္(State)တစ္ခုုစီမွာ Agentက ဘာActionလုပ္ရင္ေကာင္းမလဲဆိုျပီး ဆံုးျဖတ္ရတယ္(Decision Making)။ သူလုပ္လိုက္တဲ့ Actionက Environmentအေပၚ အၾကိဳးသက္ေရာက္မွဴရွိတယ္။ Environmentကေန သူ့Actionအေပၚမူတည္ျပီး သူ့ကိုု ဆုေပးတာျဖစ္ျဖစ္ ဒဏ္ေပးတာျဖစ္ျဖစ္ Feedbackတစ္ခုခုျပန္ေပးတယ္။  
+## Supervised Learning နဲ့ဘာကွာသလဲ ??  
+Reinforcement Learningက Agentကနေ Environmentကိုထုတ်ပေးတဲ့ Actionတွေပါတယ်။ ကိုယ်အရင်အဆင့်က ထုတ်ပေးတဲ့ Actionက နောက်အဆင့်တွေအပေါ်မှာပါ သက်ရောက်မှူရှိတယ်။ Chessကစားရင် ကိုယ်အရင်က ရွှေ့ခဲ့တဲ့ Actionက နောက်အဆင့်တွေမှာ အကြိုးသက်ရောက်မှူရှိတယ်။ အဆင့်(State)တစ်ခုုစီမှာ Agentက ဘာActionလုပ်ရင်ကောင်းမလဲဆိုပြီး ဆုံးဖြတ်ရတယ်(Decision Making)။ သူလုပ်လိုက်တဲ့ Actionက Environmentအပေါ် အကြိုးသက်ရောက်မှူရှိတယ်။ Environmentကနေ သူ့Actionအပေါ်မူတည်ပြီး သူ့ကိုု ဆုပေးတာဖြစ်ဖြစ် ဒဏ်ပေးတာဖြစ်ဖြစ် Feedbackတစ်ခုခုပြန်ပေးတယ်။  
 
-Supervised Learningက အဲလိုမဟုတ္ဘူး။ Dataထဲမွာပါတဲ့ Independent Examplesေတြအေပၚ အေျခခံျပီးသင္ယူသြားတာျဖစ္တယ္။ ဒီ Inputမ်ိဳးေတြ့ရင္ ဘယ္လိုOutputမ်ိဳးထုတ္ရမယ္ဆိုတာမ်ိဳးျပသနာေတြအတြက္ အသံုးဝင္တယ္။ 
+Supervised Learningက အဲလိုမဟုတ်ဘူး။ Dataထဲမှာပါတဲ့ Independent Examplesတွေအပေါ် အခြေခံပြီးသင်ယူသွားတာဖြစ်တယ်။ ဒီ Inputမျိုးတွေ့ရင် ဘယ်လိုOutputမျိုးထုတ်ရမယ်ဆိုတာမျိုးပြသနာတွေအတွက် အသုံးဝင်တယ်။ 
 ![RL vs SL]({{ site.url }}/logs/images/RLIntro/RLvsSL.png)  
 {: .center-image}
 *Supervised Learning Vs Reinforcement Learning*[^5]
 {: .center}   
 [^5]: [Introduction to Reinforcement Learning - Joelle Pineau](http://videolectures.net/deeplearning2016_pineau_reinforcement_learning/)  
 
-## Reinforcement Learning ကိုဘယ္လိုေလ့လာရမလဲ ??  
-ဒီPostက RLကို မသိေသးသူေတြအတြက္ မိတ္ဆက္ရံုသက္သက္ပါ။ ဒါဖတ္ျပီး စိတ္ဝင္စားလို့ ေလ့လာခ်င္တယ္ဆိုရင္ ေအာက္က ၃ခုကေတာ့ က်မကိုယ္တိုင္ သံုးခဲ့တဲ့ Resource ေတြပါ။ အဲဒီ ၂ခုနဲ့တင္ အေျခခံရျပီး တျခား Research Paper ေတြ သူမ်ားေရးထားတဲ့ Open Source Code ေတြကို ဖတ္ရင္ နားလည္ႏိုင္ပါတယ္။ David Silverရဲ့ Videoေတြကို အရင္ၾကည့္ျပီး သူနဲ့ဆိုင္တဲ့ Textbookက Chapterေတြကိုလိုက္ဖတ္ၾကည့္ပါ။ ျပီးေတာ့ Exerciseေတြလိုက္လုပ္ၾကည့္ပါ။
+## Reinforcement Learning ကိုဘယ်လိုလေ့လာရမလဲ ??  
+ဒီPostက RLကို မသိသေးသူတွေအတွက် မိတ်ဆက်ရုံသက်သက်ပါ။ ဒါဖတ်ပြီး စိတ်ဝင်စားလို့ လေ့လာချင်တယ်ဆိုရင် အောက်က ၃ခုကတော့ ကျမကိုယ်တိုင် သုံးခဲ့တဲ့ Resource တွေပါ။ အဲဒီ ၂ခုနဲ့တင် အခြေခံရပြီး တခြား Research Paper တွေ သူများရေးထားတဲ့ Open Source Code တွေကို ဖတ်ရင် နားလည်နိုင်ပါတယ်။ David Silverရဲ့ Videoတွေကို အရင်ကြည့်ပြီး သူနဲ့ဆိုင်တဲ့ Textbookက Chapterတွေကိုလိုက်ဖတ်ကြည့်ပါ။ ပြီးတော့ Exerciseတွေလိုက်လုပ်ကြည့်ပါ။
 * David Silver’s Reinforcement Learning Lectures [[Videos](https://youtu.be/2pWv7GOvuf0?list=PL7-jPKtc4r78-wCZcQn5IqyuWhBZ8fOxT)][[Notes](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)]
 * [Textbook: Reinforcement Learning: An Introduction -  ](http://incompleteideas.net/sutton/book/bookdraft2016sep.pdf)  
 * [Exercises: WildML - Learning RL](http://www.wildml.com/2016/10/learning-reinforcement-learning/)
 
-ေအာက္က Resourceေတြကေတာ့ က်မကိုယ္တိုင္ မတက္ဖူးေသးတဲ့ နာမည္ၾကီး RL courseနဲ့ Tutorialေတြပါ။ ကိုယ္တိုင္မတက္ဖူးေသးလို့ အသံုးဝင္မဝင္ကိုေတာ့ မေျပာႏိုင္ပါဘူး။  Deep Reinforcement Learning Courseကေတာ့ ေတာ္ေတာ္ေကာင္းတယ္လို့ၾကားပါတယ္။
+အောက်က Resourceတွေကတော့ ကျမကိုယ်တိုင် မတက်ဖူးသေးတဲ့ နာမည်ကြီး RL courseနဲ့ Tutorialတွေပါ။ ကိုယ်တိုင်မတက်ဖူးသေးလို့ အသုံးဝင်မဝင်ကိုတော့ မပြောနိုင်ပါဘူး။  Deep Reinforcement Learning Courseကတော့ တော်တော်ကောင်းတယ်လို့ကြားပါတယ်။
 * [Udacity Reinforcement Learning Course](https://www.udacity.com/course/reinforcement-learning--ud600)  
 * [Simple Reinforcement Learning with Tensorflow series](https://medium.com/@awjuliani/super-simple-reinforcement-learning-tutorial-part-1-fd544fab149)  
 * [Deep Reinforcement Learning](http://rll.berkeley.edu/deeprlcourse/)
 
-## မွတ္ခ်က္
-တခ်ိဳ့ Conceptေတြကို ျမန္မာလိုတတ္ႏိုင္သေလာက္ ၾကိဳးစားေရးထားေပမယ့္ အေရးအသားညံ့ဖ်င္းတဲ့အတြက္ မရွင္းတာေတြ၊ ျမန္မာစာအေရးအသား မွားေနတာရွိလဲ ေထာက္ျပႏိုုင္ပါတယ္ :P
+## မှတ်ချက်
+တချို့ Conceptတွေကို မြန်မာလိုတတ်နိုင်သလောက် ကြိုးစားရေးထားပေမယ့် အရေးအသားညံ့ဖျင်းတဲ့အတွက် မရှင်းတာတွေ၊ မြန်မာစာအရေးအသား မှားနေတာရှိလဲ ထောက်ပြနိုုင်ပါတယ် :P
