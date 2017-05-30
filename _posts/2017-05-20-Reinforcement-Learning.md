@@ -34,13 +34,13 @@ share: true
 ## Some Applications of Reinforcement Learning     
 Roboticsဘက်မှာ Robotကို အပြင်လောကနဲ့ဆက်ဆံပြီး ဆုံးဖြတ်ချက်တွေ ချတတ်လာအောင် သင်ပေးတဲ့နေရာမျိုးမှာ RLကိုသုံးတယ်။ မောင်းသူမဲ့ ကားတွေ Droneလေးတွေမှာလည်း သူ့ကိုသုံးတယ်။  
 
-DeepMindရဲ့ AlphaGoအကြောင်းကို တော်တော်များများကြားဖူးကြမှာပါ။ AlphaGoက Reinforcement Learningကိုသုံးထားတာပါ။ Computerကို Gameတွေဆော့တတ်အောင် သင်ပေးတဲ့နေရာမှာ RLကိုအသုံးပြုတယ်။[^1][^2]  
+DeepMindရဲ့ AlphaGoအကြောင်းကို တော်တော်များများကြားဖူးကြမှာပါ။ AlphaGoက Reinforcement Learningကိုသုံးထားတာပါ။ Computerကို Gameတွေဆော့တတ်အောင် သင်ပေးတဲ့နေရာမှာ RLကိုအသုံးပြုတယ်။[^1],[^2]  
 
 [^1]: [AlphaGo](https://deepmind.com/research/alphago/)  
 
 [^2]: [Reinforcement learning with unsupervised auxiliary tasks](https://deepmind.com/blog/reinforcement-learning-unsupervised-auxiliary-tasks/)  
 
-Roboticsတို့ Gameတို့အပြင် Medicine၊ Manufacturingအစရှိသဖြင့် တခြားနယ်ပယ်တွေမှာလည်း RLကိုသုံးတယ်။ ဥပမာပေးရရင် Googleက Reinforcement Learningကိုသုံးပြီး Data Center Cooling ကုန်ကျငွေကို ၄၀ရာခိုင်နှုန်း လျှော့ချခဲ့တယ်။[^3][^4]  
+Roboticsတို့ Gameတို့အပြင် Medicine၊ Manufacturingအစရှိသဖြင့် တခြားနယ်ပယ်တွေမှာလည်း RLကိုသုံးတယ်။ ဥပမာပေးရရင် Googleက Reinforcement Learningကိုသုံးပြီး Data Center Cooling ကုန်ကျငွေကို ၄၀ရာခိုင်နှုန်း လျှော့ချခဲ့တယ်။[^3],[^4]  
 
 [^3]: [DeepMind AI Reduces Google Data Centre Cooling Bill by 40%](https://deepmind.com/blog/deepmind-ai-reduces-google-data-centre-cooling-bill-40/)  
 
