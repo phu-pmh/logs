@@ -1,22 +1,20 @@
 title: PM's Pensieve
 author: PM
-email: 
 description: > # this means to ignore newlines until "baseurl:"
-  PM's Virtual Pensieve
-
-baseurl: "/logs" # the subpath of your site, e.g. /blog
-url: "https://phu-pmh.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-
+  PM's virtual Pensieve
 twitter_username: 
 github_username:  
 
-disqus:
-  shortname: pensieve-1
+baseurl: "/logs"
+url: "http://phu-pmh.github.io"
+
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 minima:
   date_format: "%b %-d, %Y"
 
+disqus:
+  shortname: pensieve-1
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 #header_pages:
