@@ -3,7 +3,7 @@ layout: post
 title: "Hello World"
 description: "Greetings"
 date: 2017-05-01
-tags: [Greetings]
+tags: [General]
 comments: true
 share: true
 ---
