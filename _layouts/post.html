@@ -1,6 +1,13 @@
 ---
 layout: default
 ---
+<!-- mathjax -->
+{% if page.mathjax %}
+<script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+{% endif %}
+
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
@@ -19,12 +26,6 @@ layout: default
     {{ content }}
   </div>
 
-  <!-- mathjax -->
-  {% if page.mathjax %}
-  <script type="text/javascript"
-        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-  </script>
-  {% endif %}
 
   {% if site.disqus.shortname %}
     {% include disqus_comments.html %}

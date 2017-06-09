@@ -1,6 +1,14 @@
 ---
 layout: default
 ---
+
+<!-- mathjax -->
+{% if page.mathjax %}
+<script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+{% endif %}
+
 <article class="post">
 
   <header class="post-header">
@@ -13,9 +21,3 @@ layout: default
 
 </article>
 
-<!-- mathjax -->
-{% if page.mathjax %}
-<script type="text/javascript"
-        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-  </script>
-{% endif %}
