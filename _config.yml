@@ -10,8 +10,8 @@ url: "https://phu-pmh.github.io" # the base hostname & protocol for your site, e
 twitter_username: phu_pmh
 github_username:  phu-pmh
 
-#disqus:
-#  shortname: pensieve-1
+disqus:
+  shortname: pensieve-1
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 

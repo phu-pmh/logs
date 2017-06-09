@@ -6,6 +6,7 @@ date: 2017-05-20
 tags: [Reinforcement Learning, Burmese]
 comments: true
 share: true
+mathjax: false
 ---
 
 

@@ -4,5 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Collecting random thoughts, moments and stuffs I want to remember in the future.
+> The [Pensieve](http://harrypotter.wikia.com/wiki/Pensieve) is an object used to review memories.
+
+This is a virtual pensieve to collect random thoughts, moments and stuffs I might want to review in the future.  
+Some of them will be technical, some will be personal(and often nonsensical).  
+
+
+
 
