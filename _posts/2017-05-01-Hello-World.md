@@ -15,4 +15,12 @@ Nothing here yet, but thanks for visiting!
 မဂၤလာပါ။
 
 
-the gradient on the image \(x\) is simply \(\nabla_x s = w\).
+$$a^2 + b^2 = c^2$$
+
+$$ \mathsf{Data = PCs} \times \mathsf{Loadings} $$
+
+
+$$ \mathbf{X}\_{n,p} = \mathbf{A}\_{n,k} \mathbf{B}\_{k,p} $$
+
+
+\\[ \mathbf{X} = \mathbf{Z} \mathbf{P^\mathsf{T}} \\]
