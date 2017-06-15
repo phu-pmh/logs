@@ -54,7 +54,7 @@ Roboticsတို့ Gameတို့အပြင် Medicine၊ Manufacturing�
 
 ဥပမာ Chatbotဆိုပါတော့။ အောက်က Google Assistantကို အိမ်ကနေ Sentosaကို ဘယ်လိုသွားရမလဲလို့မေးတဲ့ dialogကိုကြည့်ကြည့်ပါ။ Chatbotက မေးခွန်းကိုကြည့်တယ်၊ ဖြေနိုင်ဖို့ကြိုးစားတယ်၊ ဒါပေမယ့် အိမ်လိပ်စာကို မသိဘူး။ မသိတော့ Userကိုပြန်မေးမယ်။ Userကဘာဆက်ပြောလည်း အပေါ်မူတည်ပြီး လုပ်စရာရှိတာ ဆက်လုပ်မယ်။ Userနဲ့ botနဲ့ကြားမှာ Interactionရှိတယ်။ ဒါ့အပြင် စကားပြောသွားတာလည်း အပေါ်နဲ့ အောက်နဲ့ ဆက်စပ်မှူ Sequenceရှိတယ်။
 
-![Chatbot]({{ site.url }}/logs/images/RLIntro/GoogleAssistant.jpg)
+![Chatbot](/logs/images/RLIntro/GoogleAssistant.jpg)
 
 Supervised Learning လိုမျိုး Inputပေး၊ Output Predictionလုပ်တဲ့ methodမျိုးဆို Interactionကိုထည့်စဉ်းစားဖို့တော်တော်ခက်တယ်။ Supervised learningကိုလည်း Dialog Systemsတွေမှာသုံးတာမရှိဘူးမဟုတ်ဘူး။ အများကြီး ရှိတယ်။ ဒါပေမယ့် Deep Reinforcement Learningကိုသုံးရင် User Interactionကိုပါ ထည့်စဉ်းစားလို့ရတယ်။ Dialog ဆိုတာမျိုးက အမျိုးမျိုးပေါက်ကရပြောလို့ရတာလေ။ အဲတော့ User Interactionကနေလည်း သင်ယူဖို့ အရေးကြီးတယ်။  
 
@@ -63,7 +63,7 @@ Dialogကတော့ အမြင်သာဆုံး ဥပမာပေါ့
 ဒါက RLကိုNLP မှာဘယ်လိုသုံးလဲဆိုတာ ဥပမာပေးတာပါ။ အသေးစိတ်ကိုရေးရင် ဒီSectionနဲ့တင် postကအရမ်းရှည်သွားမှာမို့လို့ နောက်မှ အားလို့ စိတ်ကူးပေါက်ရင် ထပ်ရေးပါ့မယ်။ 
 
 ## RL ရဲ့အစိတ်အပိုင်းများ  
-![RL]({{ site.url }}/logs/images/RLIntro/RL.png)
+![RL](/logs/images/RLIntro/RL.png)
 {: .center-image }
 
 Reinforcement Learningကဘာလဲဆိုတာ အပေါ်မှာ ပြောခဲ့တာကို ပြန်ပြီး recapပြန်လုပ်တာပေါ့။ 
@@ -89,7 +89,7 @@ Reinforcement Learningမှာ Explorationနဲ့ Exploitationကို မ�
 Reinforcement Learningက Agentကနေ Environmentကိုထုတ်ပေးတဲ့ Actionတွေပါတယ်။ ကိုယ်အရင်အဆင့်က ထုတ်ပေးတဲ့ Actionက နောက်အဆင့်တွေအပေါ်မှာပါ သက်ရောက်မှူရှိတယ်။ Chessကစားရင် ကိုယ်အရင်က ရွှေ့ခဲ့တဲ့ Actionက နောက်အဆင့်တွေမှာ အကြိုးသက်ရောက်မှူရှိတယ်။ အဆင့်(State)တစ်ခုစီမှာ Agentက ဘာActionလုပ်ရင်ကောင်းမလဲဆိုပြီး ဆုံးဖြတ်ရတယ်(Decision Making)။ သူလုပ်လိုက်တဲ့ Actionက Environmentအပေါ် အကြိုးသက်ရောက်မှူရှိတယ်။ Environmentကနေ သူ့Actionအပေါ်မူတည်ပြီး သူ့ကို ဆုပေးတာဖြစ်ဖြစ် ဒဏ်ပေးတာဖြစ်ဖြစ် Feedbackတစ်ခုခုပြန်ပေးတယ်။  
 
 Supervised Learningက အဲလိုမဟုတ်ဘူး။ Dataထဲမှာပါတဲ့ Independent Examplesတွေအပေါ် အခြေခံပြီးသင်ယူသွားတာဖြစ်တယ်။ ဒီ Inputမျိုးတွေ့ရင် ဘယ်လိုOutputမျိုးထုတ်ရမယ်ဆိုတာမျိုးပြသနာတွေအတွက် အသုံးဝင်တယ်။ 
-![RL vs SL]({{ site.url }}/logs/images/RLIntro/RLvsSL.png)  
+![RL vs SL](/logs/images/RLIntro/RLvsSL.png)  
 {: .center-image}
 *Supervised Learning Vs Reinforcement Learning*[^5]
 {: .center}   
