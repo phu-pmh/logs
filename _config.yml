@@ -10,6 +10,9 @@ description: > # this means to ignore newlines until "baseurl:"
 twitter_username: phu_pmh
 github_username:  phu-pmh
 
+url: https://logs.phumonhtut.me
+enforce_ssl: logs.phumonhtut.me
+
 disqus:
   shortname: pensieve-1
 # Minima date format
