@@ -63,8 +63,8 @@ Dialogကတော့ အမြင်သာဆုံး ဥပမာပေါ့
 ဒါက RLကိုNLP မှာဘယ်လိုသုံးလဲဆိုတာ ဥပမာပေးတာပါ။ အသေးစိတ်ကိုရေးရင် ဒီSectionနဲ့တင် postကအရမ်းရှည်သွားမှာမို့လို့ နောက်မှ အားလို့ စိတ်ကူးပေါက်ရင် ထပ်ရေးပါ့မယ်။ 
 
 ## RL ရဲ့အစိတ်အပိုင်းများ  
-![RL]({{ site.url }}/logs/images/RLIntro/RL.png)  
-{: .center-image}  
+![RL]({{ site.url }}/logs/images/RLIntro/RL.png)
+{: .center-image }
 
 Reinforcement Learningကဘာလဲဆိုတာ အပေါ်မှာ ပြောခဲ့တာကို ပြန်ပြီး recapပြန်လုပ်တာပေါ့။ 
 ပုံမှာပြထားတဲ့အတိုင်း Time Step t မှာ Agentက Actionတစ်ခုခုကိုလုပ်လိုက်မယ်။ အစပိုင်းမှာ သူက ဘယ် Actionကကောင်းမှန်းမသိသေးဘူး။ အဲတော့ ဒီအတိုင်း random action တစ်ခုကို Tryကြည့်တယ်။ သူ့Actionအပေါ်မူတည်ပြီး State S<sub>t+1</sub>ကပြောင်းသွားမယ်။ ပြီးရင် Reward ပြန်ရမယ်။
