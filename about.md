@@ -9,6 +9,8 @@ permalink: /about/
 This is a virtual pensieve to collect random thoughts, moments and stuffs I might want to review in the future.  
 Some of them will be technical; some will be personal (and often nonsensical).  
 
+You can stalk me [here](https://phumonhtut.me).
+
 
 
 
