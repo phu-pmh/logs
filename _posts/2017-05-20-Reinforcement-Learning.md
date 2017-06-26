@@ -3,9 +3,8 @@ layout: post
 title: "Reinforcement Learning မိတ်ဆက်"
 description: "Reinforcement Learning အကျဉ်းချုပ် မိတ်ဆက်"
 date: 2017-05-20
-tags: [Reinforcement Learning, Burmese]
+tags: [Reinforcement Learning]
 comments: true
-share: true
 mathjax: false
 ---
 

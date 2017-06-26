@@ -5,11 +5,10 @@ description: "Greetings"
 date: 2017-05-01
 tags: [General]
 comments: true
-share: true
 mathjax: false
 ---
 
 Hello World!
-Nothing here yet, but thanks for visiting!  
+Thanks for visiting!  
 
 မဂၤလာပါ။

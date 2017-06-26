@@ -21,6 +21,8 @@ disqus:
 timezone:           America/New_York
 permalink:          /:year-:month-:day/:title/
 
+google_analytics: 'UA-96757552-2'
+
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 #header_pages:
