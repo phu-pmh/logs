@@ -38,25 +38,21 @@ Pytorchကော Tensorflowကော လောလောဆယ် စမ်းတ
 - [TexStudio](http://www.texstudio.org/)
 
 # Python3 and Virtualenv
-```
-$ brew install python3
+```$ brew install python3
 $ pip3 install virtualenv
 ```
 
 # Numpy and Scipy
-```
-$ brew install numpy
+```$ brew install numpy
 $ brew install scipy
 ```
 
 # Jupyter
-```
-$ pip3 install --upgrade jupyter
+```$ pip3 install --upgrade jupyter
 ```
 
 # Pytorch
-```
-$ virtualenv --system-site-packages -p python3 ~/py3torch
+```$ virtualenv --system-site-packages -p python3 ~/py3torch
 $ source ~/py3torch/bin/activate
 $ pip install http://download.pytorch.org/whl/torch-0.1.12.post2-cp36-cp36m-macosx_10_7_x86_64.whl 
 $ pip install torchvision
@@ -64,8 +60,7 @@ $ deactivate
 ```
 
 # Tensorflow
-```
-$ virtualenv --system-site-packages -p python3 ~/tensorflow
+```$ virtualenv --system-site-packages -p python3 ~/tensorflow
 $ source ~/tensorflow/bin/activate
 $ pip3 install --upgrade tensorflow
 $ deactivate
