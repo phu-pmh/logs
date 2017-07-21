@@ -21,9 +21,9 @@ Pytorchကော Tensorflowကော လောလောဆယ် စမ်းတ
 - beautiful terminal
 - Homebrew
 - Git
-- Sublime Text
--- Markdown Editing
--- Markdown Preview
+- Sublime Text  
+-- Markdown Editing  
+-- Markdown Preview  
 -- Sublimelinter with pylint and pep8
 - Vim
 - [python3 and virtualenv](#python3-and-virtualenv)
