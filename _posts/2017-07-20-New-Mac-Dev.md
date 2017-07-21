@@ -11,8 +11,9 @@ mathjax: false
 ဒီနေ့ပဲ Macbookအသစ်ရလာတဲ့အတွက် ဂနာမငြိမ်ဘဲ ကလိပြီးဟိုသွင်းဒီသွင်းတာတွေကို ရေးထားတာပါ။  
 [Mac-dev-setup](https://github.com/nicolashery/mac-dev-setup#homebrew)မှာ ပြောထားတာလေးတွေကို မှီငြမ်းပြီး ကိုယ်သုံးနေကျ Appတွေနဲ့ Machine Learningနဲ့ဆိုင်တာလေးတွေ ထည့်ထားပါတယ်။  
 Pytorchကော Tensorflowကော လောလောဆယ် စမ်းတာတော့ ဘာမှပြသနာမတက်ဘဲ သွင်းလို့ရပါတယ်။  
-နောင်တစ်ချိန် Macbook အသစ်ကို setupလုပ်ရင် ပြန်ကြည့်လို့ရအောင်နဲ့ တခြားလူတွေအတွက် အသုံးဝင်လိုဝင်ငြား မှတ်တမ်းတင်ထားတာပါ။ :P   
+နောင်တစ်ချိန် Macbook အသစ်ကို setupလုပ်ရင် ပြန်ကြည့်လို့ရအောင်နဲ့ တခြားလူတွေအတွက် အသုံးဝင်လိုဝင်ငြား မှတ်တမ်းတင်ထားတာပါ။ :)   
 လောလောဆယ် မှတ်မိသလောက်ကတော့ ဒါပါပဲ။ နောက်မှ အသုံးဝင်တဲ့ package တွေ စိတ်ထဲပေါ်လာတာရှိရင် လာပြီး updateလုပ်ပါ့မယ်။
+
 
 
 # Dev Setup
@@ -21,6 +22,9 @@ Pytorchကော Tensorflowကော လောလောဆယ် စမ်းတ
 - Homebrew
 - Git
 - Sublime Text
+-- Markdown Editing
+-- Markdown Preview
+-- Sublimelinter with pylint and pep8
 - Vim
 - [python3 and virtualenv](#python3-and-virtualenv)
 - [Numpy and Scipy](#numpy-and-scipy)
