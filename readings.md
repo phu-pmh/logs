@@ -14,6 +14,7 @@ Inspired by Denny Britz's [deeplearning-papernotes repository](https://github.co
 - Achieving Human Parity on Automatic Chinese to English News Translation [[arXiv](https://arxiv.org/abs/1803.05567)]
 - Do latent tree learning models identify meaningful structure in sentences? [[arXiv](https://arxiv.org/abs/1709.01121)]
 - ListOps: A Diagnostic Dataset for Latent Tree Learning [[arXiv](https://arxiv.org/abs/1804.06028)]
+- What you can cram into a single vector: Probing sentence embeddings for linguistic properties [[arXiv](https://arxiv.org/abs/1805.01070)]
 
 
 ### 2017
