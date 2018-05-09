@@ -1,0 +1,61 @@
+---
+layout: page
+title: ၂၀၁၈ထဲ ဖတ်ဖြစ်သမျှ
+permalink: /readings/
+---
+
+၂၀၁၈ထဲ ဖတ်ဖြစ်တဲ့ Deep NLP နဲ့ပတ်သတ်တဲ့ တချို့စာတမ်းတွေကို researchဘက်ကို စိတ်ဝင်စားတဲ့လူတွေ လိုက်ဖတ်လို့ရအောင် စုစည်းထားတာပါ။ Publish လုပ်တဲ့နှစ်နဲ့ စီထားတာဖြစ်ပါတယ်။ လောလောဆယ်တော့ စာတမ်းတွေပဲ စုထားတယ်။ တချို့ စာတမ်းတွေမှာ သူနဲ့ဆိုင်တဲ့ summaryနဲ့ slide တွေပါ တွဲပေးထားပါ့မယ်။   
+Inspired by Denny Britz's [deeplearning-papernotes repository](https://github.com/dennybritz/deeplearning-papernotes).
+
+### 2018
+- Generating Wikipedia by Summarizing Long Sequences [[arXiv](https://arxiv.org/abs/1801.10198)]
+- Deep contextualized word representations [[arXiv](https://arxiv.org/abs/1802.05365)]
+- Learning Word Vectors for 157 Languages [[arXiv](https://arxiv.org/abs/1802.06893)]
+- Achieving Human Parity on Automatic Chinese to English News Translation [[arXiv](https://arxiv.org/abs/1803.05567)]
+- Do latent tree learning models identify meaningful structure in sentences? [[arXiv](https://arxiv.org/abs/1709.01121)]
+- ListOps: A Diagnostic Dataset for Latent Tree Learning [[arXiv](https://arxiv.org/abs/1804.06028)]
+
+
+### 2017
+- Advances in Pre-Training Distributed Word Representations [[arXiv](https://arxiv.org/abs/1712.09405)]
+- Neural Language Modeling by Jointly Learning Syntax and Lexicon [[arXiv](https://arxiv.org/abs/1711.02013)]
+- Learned in Translation: Contextualized Word Vectors[[arXiv](https://arxiv.org/abs/1708.00107)]
+- Neural Speed Reading via Skim-RNN [[OpenReview](https://openreview.net/forum?id=Sy-dQG-Rb)][[Slides](https://drive.google.com/file/d/1jU6oxw6g7TQ_GkZuc14nCqD0J1xpEFd4/view?usp=sharing)]
+- Generalization without systematicity: On the compositional skills of sequence-to-sequence recurrent networks [[arXiv](https://arxiv.org/abs/1711.00350)]
+- Learning to Compose Words into Sentences with Reinforcement Learning [[OpenReview](https://openreview.net/forum?id=Skvgqgqxe)] [[Slides](https://drive.google.com/file/d/1Pj53HLvmmNacAUVgy_SNs7yUvPaZDu7Q/view?usp=sharing)]
+- Evidence Aggregation for Answer Re-Ranking in Open-Domain Question Answering [[arXiv](https://arxiv.org/abs/1711.05116)]
+- R^3: Reinforced Ranker Reader [[arXiv](https://arxiv.org/abs/1709.00023)]
+- Reading Wikipedia to Answer Open-Domain Questions [[arXiv](https://arxiv.org/abs/1704.00051)]
+- Ask the Right Questions: Active Question Reformulation with Reinforcement Learning [[arXiv](https://arxiv.org/abs/1705.07830)]
+- Supervised Learning of Universal Sentence Representations from Natural Language Inference Data [[arXiv](https://arxiv.org/abs/1705.02364)]
+- Unsupervised Machine Translation Using Monolingual Corpora Only [[arXiv](https://arxiv.org/abs/1711.00043)]
+- Dynamic Routing Between Capsules [[arXiv](https://arxiv.org/abs/1710.09829)]
+- Attention Is All You Need [[arXiv](https://arxiv.org/abs/1706.03762)]
+- Living a discrete life in a continuous world: Reference in cross-modal entity tracking [[arXiv](https://arxiv.org/abs/1702.01815)]
+- Fine-grained analysis of sentence embeddings using auxiliary prediction tasks[[arXiv](https://arxiv.org/abs/1608.04207)]
+- What do Neural Machine Translation Models Learn about Morphology? [[arXiv](https://arxiv.org/abs/1704.03471)] 
+- What Do Recurrent Neural Network Grammars Learn About Syntax? [[link](http://www.aclweb.org/anthology/E17-1117)]
+- Learning Language Representations for Typology Prediction [[arXiv](https://arxiv.org/abs/1707.09569)]
+- Toward Controlled Generation of Text [[arXiv](https://arxiv.org/abs/1703.00955)]
+ 
+### 2016
+- Categorical Reparameterization with Gumbel-Softmax[[arXiv](https://arxiv.org/abs/1611.01144)]
+- [A Decomposable Attention Model for Natural Language Inference](notes/2016-06-decomposable-attention-model) [[arXiv](https://arxiv.org/abs/1606.01933)]
+- A Fast Unified Model for Parsing and Sentence Understanding [[arXiv](https://arxiv.org/abs/1603.06021)]  
+- Building machines that learn and think like people[[arXiv](https://arxiv.org/abs/1604.00289)]
+- What do you know about an alligator when you know the company it keeps? [[link](http://semprag.org/article/viewFile/sp.9.17/pdf)]
+- Assessing the Ability of LSTMs to Learn Syntax-Sensitive Dependencies [[arXiv](https://arxiv.org/abs/1611.01368)]
+- Recurrent Neural Network Grammars [[arXiv](https://arxiv.org/abs/1602.07776)]
+- Tutorial on Variational Autoencoders [[arXiv](https://arxiv.org/abs/1606.05908)]
+
+### 2014
+- A Fast and Accurate Dependency Parser using Neural Networks [[arXiv](https://cs.stanford.edu/~danqi/papers/emnlp2014.pdf)]
+
+### 2013
+- Auto-Encoding Variational Bayes [[arXiv](https://arxiv.org/abs/1312.6114)]
+
+## Before 2010
+
+### 2005
+- Grounding words in perception and action: computational insights [[ScienceDirect](https://www.sciencedirect.com/science/article/pii/S1364661305001853)]
+- Natural language grammar induction with a generative constituent-context model[[ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0031320305000270)]
