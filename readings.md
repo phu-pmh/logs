@@ -4,7 +4,7 @@ title: ၂၀၁၈ထဲ ဖတ်ဖြစ်သမျှ
 permalink: /readings/
 ---
 
-၂၀၁၈ထဲ ဖတ်ဖြစ်တဲ့ Deep NLP နဲ့ပတ်သတ်တဲ့ တချို့စာတမ်းတွေကို researchဘက်ကို စိတ်ဝင်စားတဲ့လူတွေ လိုက်ဖတ်လို့ရအောင် စုစည်းထားတာပါ။ Publish လုပ်တဲ့နှစ်နဲ့ စီထားတာဖြစ်ပါတယ်။ လောလောဆယ်တော့ စာတမ်းတွေပဲ စုထားတယ်။ တချို့ စာတမ်းတွေမှာ သူနဲ့ဆိုင်တဲ့ summaryနဲ့ slide တွေပါ တွဲပေးထားပါ့မယ်။   
+၂၀၁၈ထဲ ဖတ်ဖြစ်တဲ့ Deep NLP နဲ့ပတ်သတ်တဲ့ တချို့စာတမ်းတွေကို researchဘက်ကို စိတ်ဝင်စားတဲ့လူတွေ လိုက်ဖတ်လို့ရအောင် စုစည်းထားတာပါ။ Publish လုပ်တဲ့နှစ်နဲ့ စီထားတာဖြစ်ပါတယ်။ လောလောဆယ်တော့ စာတမ်းတွေပဲ စုထားတယ်။ တချို့ စာတမ်းတွေမှာ သူနဲ့ဆိုင်တဲ့ summaryနဲ့ slide တွေပါ တွဲပေးထားပါ့မယ်။   
 Inspired by Denny Britz's [deeplearning-papernotes repository](https://github.com/dennybritz/deeplearning-papernotes).
 
 ### 2018
@@ -14,7 +14,17 @@ Inspired by Denny Britz's [deeplearning-papernotes repository](https://github.co
 - Achieving Human Parity on Automatic Chinese to English News Translation [[arXiv](https://arxiv.org/abs/1803.05567)]
 - Do latent tree learning models identify meaningful structure in sentences? [[arXiv](https://arxiv.org/abs/1709.01121)]
 - ListOps: A Diagnostic Dataset for Latent Tree Learning [[arXiv](https://arxiv.org/abs/1804.06028)]
+- A Multilayer Convolutional Encoder-Decoder Neural Network for Grammatical Error Correction [[arXiv](https://arxiv.org/abs/1801.08831)]
+- Noising and Denoising Natural Language: Diverse Backtranslation for Grammar Correction [[Paper](http://www.aclweb.org/anthology/N18-1057)]
+- Reaching Human-level Performance in Automatic Grammatical Error Correction: An Empirical Study [[arXiv](https://arxiv.org/pdf/1807.01270.pdf)]
+- Style Transfer Through Back-Translation [[arXiv](https://arxiv.org/abs/1804.09000)]
+- Straight to the Tree: Constituency Parsing with Neural Syntactic Distance [[arXiv](https://arxiv.org/pdf/1806.04168.pdf)]
 - What you can cram into a single vector: Probing sentence embeddings for linguistic properties [[arXiv](https://arxiv.org/abs/1805.01070)]
+- GLUE: A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding [[arXiv](https://arxiv.org/abs/1804.07461)]
+- Recurrent Neural Networks in Linguistic Theory: Revisiting Pinker and Prince (1988) and the Past Tense Debate [[arXiv](https://arxiv.org/abs/1807.04783)] 
+- Extreme Adaptation for Personalized Neural Machine Translation [[arXiv](https://arxiv.org/abs/1805.01817)]   
+- StructVAE: Tree-structured Latent Variable Models for Semi-supervised Semantic Parsing [[arXiv](https://arxiv.org/abs/1806.07832)]  
+- Sharp Nearby, Fuzzy Far Away: How Neural Language Models Use Context [[arXiv](https://arxiv.org/abs/1805.04623)]
 
 
 ### 2017
@@ -37,7 +47,7 @@ Inspired by Denny Britz's [deeplearning-papernotes repository](https://github.co
 - What do Neural Machine Translation Models Learn about Morphology? [[arXiv](https://arxiv.org/abs/1704.03471)] 
 - What Do Recurrent Neural Network Grammars Learn About Syntax? [[link](http://www.aclweb.org/anthology/E17-1117)]
 - Learning Language Representations for Typology Prediction [[arXiv](https://arxiv.org/abs/1707.09569)]
-- Toward Controlled Generation of Text [[arXiv](https://arxiv.org/abs/1703.00955)]
+- Generating Sentences by Editing Prototypes [[arXiv](https://arxiv.org/abs/1709.08878)]
  
 ### 2016
 - Categorical Reparameterization with Gumbel-Softmax[[arXiv](https://arxiv.org/abs/1611.01144)]
@@ -60,3 +70,4 @@ Inspired by Denny Britz's [deeplearning-papernotes repository](https://github.co
 ### 2005
 - Grounding words in perception and action: computational insights [[ScienceDirect](https://www.sciencedirect.com/science/article/pii/S1364661305001853)]
 - Natural language grammar induction with a generative constituent-context model[[ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0031320305000270)]
+
