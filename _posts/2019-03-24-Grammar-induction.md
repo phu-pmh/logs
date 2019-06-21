@@ -22,6 +22,7 @@ Linguisticsနဲ့ မရင်းနီးသူတွေအတွက် ပ�
 
 ![Slide taken from Chris Dyer's talk at NAACL2019](/images/grammarinduction/dyer-naacl-1.png)  
 {: .center-image} 
+Slide taken from Chris Dyer's talk at NAACL2019
 
 [^1]:[Noam Chomsky. 1957. Syntactic Structures.]()
 
