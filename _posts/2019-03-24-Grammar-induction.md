@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "လက်ရှိလုပ်ဖြစ်နေတဲ့ Research"
+title: "ကိုယ်လုပ်ဖြစ်ခဲ့တဲ့ (လုပ်နေဆဲ) သုတေသနအကြောင်း"
 date: 2019-06-20
 comments: true  
 tags: [Natural Language Processing]
