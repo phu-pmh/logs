@@ -13,7 +13,7 @@ mathjax: true
 Linguisticsနဲ့ မရင်းနီးသူတွေအတွက် ပထမဆုံး constituency parse tree ဆိုတာ ဘာလဲ အရင်ရှင်းပါရစေ။
 ဘာသာစကားတိုင်းမှာ ဖွဲ့စည်းပုံစည်းမျဉ်းတွေရှိပါတယ်။ အလွယ်ဆုံး စာကြောင်းရဲ့နောက်ကွယ်မှာ စကားလုံးတွေရဲ့ ဖွဲ့စည်းပုံရှိတယ်။ စာတစ်ကြောင်းဟာ အဓိပ္ပာယ်ရှိတဲ့ အပိုင်းအစအသေးလေးတွေနဲ့ စုစည်းထားတာဖြစ်တယ်။ tree ရဲ့ အစိတ်အပိုင်းတွေအပေါ်မူတည်ပြီး စာကြောင်းရဲ့ အဓိပ္ပာယ်လဲ ပြောင်းလဲနိုင်တယ်။ အောက်က ဥပမာမှဆိုရင် (a) မှန်ပြောင်းကိုင်ထားတဲ့လူတစ်ယောက်ကို မြင်တာဖြစ်ပြီး (b)က လူတစ်ယောက်ကို မှန်ပြောင်းကနေ တစ်ဆင့်ကြည့်ပြီးမြင်တာဖြစ်တယ်။
 
-![Performance drops as sentence length increases](/images/grammarinduction/ambig_trees.png)  
+![Performance drops as sentence length increases]({{ site.baseurl }}/images/grammarinduction/ambig_trees.png)  
 {: .center-image} 
 
 
@@ -26,7 +26,7 @@ Linguisticsနဲ့ မရင်းနီးသူတွေအတွက် ပ�
 
 သူတို့ဟာသူတို့တော့ ဟုတ်နေတာပဲ။ ကျမကတော့ အဲဒီယူဆချက်ကို လက်မခံတဲ့လူအုပ်စုထဲကပါ။ ဘယ် biologist ဘယ် neuroscientist ကမှ အဲဒီယူဆချက် မှန်ပါတယ်လို့ သိပ္ပံနည်းကျ သက်သေမပြနိုင်သေးဘူး။ အဲလို သက်သေမပြနိုင်သရွေ့ ဒါဟာ လူတစ်ချို့ရဲ့ ယူဆချက် သက်သက်ပဲ၊ မှန်တယ်လို့ အတည်ပြုလို့မရဘူး။ ဒါပေမဲ့ ဒီဟာမှားတယ်လို့ သက်သေပြနိုင်ရင် ဒီယူဆချက်ကို ပယ်လို့ရပြီ။ ဘယ်လို မှားကြောင်းပြနိုင်လဲဆိုတော့ ဘာ language organ မှမရှိတဲ့ စက်တစ်ခုက ဘာသာရပ်တွေရဲ့ သဒ္ဒါကို သူ့ဟာသူ ရှာတွေ့နိုင်ရင် လူတွေမှာပဲရှိတဲ့ special language organ ဆိုတာ အလကားယူဆချက်။ စက်တွေတောင် သူ့ဘာသာသူ ဒီစည်းမျဉ်းတွေကို supervise လုပ်ပေးစရာမလိုဘဲ သင်ယူနိုင်တယ်။ အဲဒါကြောင့် poverty of stimulus ကမှားတယ်လို့ သက်သေပြနိုင်တယ်။ အဲဒါအချက်ရယ် ကွန်ပြူတာရဲ့ ဘာသာစကားသင်ယူပုံကို ကြည့်ပြီး လူတွေရဲ့ ဘာသာစကားသင်ယူပုံကို လေ့လာနိုင်တာရယ်ကြောင့် grammar induction ကို cognitive scientist တွေနဲ့ linguist တွေက စိတ်ဝင်စားတယ်။
 
-![Slide taken from Chris Dyer's talk at NAACL2019](/images/grammarinduction/dyer-naacl-1.png)  
+![Slide taken from Chris Dyer's talk at NAACL2019]({{ site.baseurl }}/images/grammarinduction/dyer-naacl-1.png)  
 {: .center-image} 
 Slide taken from Chris Dyer's talk at NAACL2019[^2]
 

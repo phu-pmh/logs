@@ -6,7 +6,7 @@ layout: none
   <channel>
     <title>{{ site.name | xml_escape }}</title>
     <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}</link>
+    <link>{{ "/" | absolute_url }}</link>
     <atom:link href="https://phu-phm.github.io/logs/feed.xml" rel="self" type="application/rss+xml" />
     {% for post in site.posts limit:10 %}
       {% unless post.draft %}
@@ -14,8 +14,8 @@ layout: none
         <title>{{ post.title | xml_escape }}</title>
         <description>{{ post.content | xml_escape }}</description>
         <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-        <link>{{ site.url }}/{{ post.url }}</link>
-        <guid isPermaLink="true">{{ site.url }}/{{ post.url }}</guid>
+        <link>{{ post.url | absolute_url }}</link>
+        <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
       </item>
       {% endunless %}
     {% endfor %}
