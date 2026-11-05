@@ -1,26 +1,23 @@
 ---
 layout: default
 ---
-
 <div class="home">
-
   {{ content }}
-
-  <ul class="posts">
-    {% for post in site.posts %}
-      {% unless post.draft %}
-      <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-date">{{ post.date | date: date_format }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-      {% endunless %}
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-
+  {% assign year = "" %}
+  {% for post in site.posts %}{% unless post.draft %}
+    {% assign y = post.date | date: "%Y" %}
+    {% if y != year %}
+      {% unless forloop.first %}</ol></section>{% endunless %}
+      <section class="year"><h2>{{ y }}</h2><ol class="posts">
+      {% assign year = y %}
+    {% endif %}
+    <li>
+      <a class="post-link" href="{{ post.url | relative_url }}">
+        <span class="post-title">{{ post.title | escape }}</span>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d" }}</time>
+      </a>
+      {% if post.tags.size > 0 %}<span class="post-tags">{{ post.tags | join: " · " }}</span>{% endif %}
+    </li>
+  {% endunless %}{% endfor %}
+  </ol></section>
 </div>
