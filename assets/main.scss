@@ -3,7 +3,7 @@
 /* White page with brick-red accents taken from the Pyit Taing Htaung icon, set in a serif for reading. */
 :root {
   --bg: #ffffff; --ink: #1a1a1a; --muted: #5c5c5c; --faint: #8f8f8f; --rule: #e6e6e6;
-  --accent: #7d2232; --accent-ink: #651a28; --soft: #f6e8ea; --mark: #edcdd2; --code: #f4f4f4;
+  --accent: #3f4a3c; --accent-ink: #2f382d; --soft: #e9ece6; --mark: #d0d7cb; --code: #f4f4f4;
   --font: "Source Serif 4", "Noto Sans Myanmar", "Myanmar Text", "Myanmar Sangam MN", Padauk, Georgia, serif;
   --ui: "Familjen Grotesk", "Noto Sans Myanmar", "Myanmar Text", "Myanmar Sangam MN", "Helvetica Neue", Arial, sans-serif;
   --mono: ui-monospace, "SF Mono", Menlo, Consolas, "Noto Sans Myanmar", monospace;
@@ -11,12 +11,12 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #141414; --ink: #ececec; --muted: #a3a3a3; --faint: #737373; --rule: #2a2a2a;
-    --accent: #d98a96; --accent-ink: #e6a3ad; --soft: #2a1a1e; --mark: #4d2430; --code: #1e1e1e; color-scheme: dark;
+    --accent: #a9b8a3; --accent-ink: #c0ccba; --soft: #1e231d; --mark: #364032; --code: #1e1e1e; color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --bg: #141414; --ink: #ececec; --muted: #a3a3a3; --faint: #737373; --rule: #2a2a2a;
-  --accent: #d98a96; --accent-ink: #e6a3ad; --soft: #2a1a1e; --mark: #4d2430; --code: #1e1e1e; color-scheme: dark;
+  --accent: #a9b8a3; --accent-ink: #c0ccba; --soft: #1e231d; --mark: #364032; --code: #1e1e1e; color-scheme: dark;
 }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
