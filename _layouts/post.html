@@ -9,7 +9,7 @@ layout: default
     {% if page.subtitle %}<p class="post-subtitle">{{ page.subtitle | escape }}</p>{% endif %}
     {% if page.links %}<p class="post-links">{% for l in page.links %}<a href="{{ l.url }}">[{{ l.label | escape }}]</a>{% unless forloop.last %} {% endunless %}{% endfor %}</p>{% endif %}
   </header>
-  {% unless page.toc == false %}<nav class="toc" hidden><h2>Contents</h2><ul></ul></nav>{% endunless %}
+  {% unless page.toc == false %}<nav class="toc" hidden aria-label="Contents"><div class="toc-inner"><h2>Contents</h2><ul></ul></div></nav>{% endunless %}
   <div class="post-content">
     {{ content }}
   </div>
@@ -52,6 +52,16 @@ layout: default
     });
     toc.querySelectorAll("ul:empty").forEach(function (u) { u.remove(); });
     toc.hidden = false;
+    document.querySelector(".post").classList.add("has-toc");
+    var links = {};
+    toc.querySelectorAll("a").forEach(function (a) { links[a.getAttribute("href").slice(1)] = a; });
+    var mark = function () {
+      var cur = null;
+      hs.forEach(function (h) { if (h.getBoundingClientRect().top < 140) cur = h; });
+      toc.querySelectorAll("a.on").forEach(function (x) { x.classList.remove("on"); });
+      if (cur && links[cur.id]) links[cur.id].classList.add("on");
+    };
+    addEventListener("scroll", mark, { passive: true }); mark();
   }
   var btn = document.querySelector(".cite .copy");
   if (btn) btn.addEventListener("click", function () {

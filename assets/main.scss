@@ -5,7 +5,7 @@
   --bg: #ffffff; --ink: #1a1a1a; --muted: #5c5c5c; --faint: #8f8f8f; --rule: #e6e6e6;
   --accent: #b8322b; --accent-ink: #9a2a24; --soft: #fbe9e6; --mark: #f7d4ce; --code: #f4f4f4;
   --font: "Source Serif 4", "Noto Sans Myanmar", "Myanmar Text", "Myanmar Sangam MN", Padauk, Georgia, serif;
-  --ui: "Familjen Grotesk", "Myanmar Text", "Myanmar Sangam MN", "Helvetica Neue", Arial, sans-serif;
+  --ui: "Familjen Grotesk", "Noto Sans Myanmar", "Myanmar Text", "Myanmar Sangam MN", "Helvetica Neue", Arial, sans-serif;
   --mono: ui-monospace, "SF Mono", Menlo, Consolas, "Noto Sans Myanmar", monospace;
 }
 @media (prefers-color-scheme: dark) {
@@ -151,3 +151,16 @@ sup[role="doc-noteref"] a, a.footnote { text-decoration: none; font-family: var(
 .related li a:hover { color: var(--accent-ink); }
 .related time { flex: none; color: var(--faint); font-family: var(--ui); font-size: 0.88rem; }
 @media (max-width: 600px) { .related li { flex-direction: column; gap: 0; } }
+
+/* Contents in a sticky sidebar on wide screens; a box above the post on narrow ones. */
+.toc a.on { color: var(--accent-ink); }
+@media (min-width: 1220px) {
+  .post { position: relative; }
+  .toc { position: absolute; top: 0; bottom: 0; left: calc(100% + 3rem); width: 210px; margin: 0; padding: 0; border: 0; }
+  .toc-inner { position: sticky; top: 2rem; max-height: calc(100vh - 4rem); overflow-y: auto; padding-left: 1rem; border-left: 1px solid var(--rule); }
+  .toc ul { padding-left: 0; list-style: none; }
+  .toc ul ul { padding-left: 0.8rem; }
+  .toc li { font-family: var(--ui); font-size: 0.88rem; line-height: 1.45; margin: 0.45rem 0; }
+  .toc a { color: var(--muted); }
+  .toc a.on { color: var(--accent-ink); font-weight: 600; }
+}
