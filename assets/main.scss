@@ -23,7 +23,7 @@ html { -webkit-text-size-adjust: 100%; }
 body {
   margin: 0; background: var(--bg); color: var(--ink);
   font-family: var(--font); font-size: 17px; line-height: 1.85; -webkit-font-smoothing: antialiased;
-  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-left: #{"max(16px, env(safe-area-inset-left, 0px))"}; padding-right: #{"max(16px, env(safe-area-inset-right, 0px))"};
 }
 ::selection { background: var(--mark); }
 .wrap { max-width: 46rem; margin: 0 auto; }
