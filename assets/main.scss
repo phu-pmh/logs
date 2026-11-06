@@ -6,7 +6,7 @@
   --accent: #b8322b; --accent-ink: #9a2a24; --soft: #fbe9e6; --mark: #f7d4ce; --code: #f4f4f4;
   --font: "Source Serif 4", "Noto Sans Myanmar", "Myanmar Text", "Myanmar Sangam MN", Padauk, Georgia, serif;
   --ui: "Familjen Grotesk", "Myanmar Text", "Myanmar Sangam MN", "Helvetica Neue", Arial, sans-serif;
-  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, "Noto Sans Myanmar", monospace;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
@@ -115,3 +115,39 @@ pre { padding: 0.9rem 1rem; overflow-x: auto; line-height: 1.55; margin: 0 0 1.2
 .site-nav a, .post-link time, .post-tags, .post-meta, .post-nav a span, .tag-index a, .site-footer, .year h2 { font-family: var(--ui); }
 .post-link .post-title { font-size: 1.2rem; letter-spacing: 0; }
 .post-title, .post-content h1, .post-content h2, .post-content h3, .post-content h4 { letter-spacing: -0.01em; }
+
+/* Post pages: byline, subtitle, contents, section anchors, footnotes, citation and related posts. */
+.post-meta a { text-decoration: none; }
+.post-meta a:hover { color: var(--accent-ink); }
+.post-hero { display: block; width: 100%; height: auto; margin: 1.2rem 0 1.6rem; border-radius: 6px; }
+.post-subtitle { margin: 0.6rem 0 0; color: var(--muted); font-size: 1.2rem; line-height: 1.5; font-style: italic; }
+.post-links { margin: 0.9rem 0 0; font-family: var(--ui); font-size: 0.95rem; }
+.post-links a { margin-right: 0.6rem; text-decoration: none; }
+.toc { margin: 0 0 2.2rem; padding: 1rem 1.2rem; border: 1px solid var(--rule); border-radius: 6px; }
+.toc h2 { margin: 0 0 0.4rem; font-family: var(--ui); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+.toc ul { margin: 0; padding-left: 1.1rem; }
+.toc ul ul { margin-top: 0.15rem; }
+.toc li { margin: 0.15rem 0; line-height: 1.6; }
+.toc a { color: var(--ink); text-decoration: none; }
+.toc a:hover { color: var(--accent-ink); }
+.post-content h2 { margin-top: 2.8rem; }
+.post-content .anchor { margin-left: 0.4rem; color: var(--faint); font-family: var(--ui); font-weight: 400; text-decoration: none; opacity: 0; transition: opacity 0.15s; }
+.post-content h2:hover .anchor, .post-content h3:hover .anchor, .post-content .anchor:focus { opacity: 1; }
+@media (hover: none) { .post-content .anchor { opacity: 1; } }
+.post-content hr { width: 6rem; margin: 2.8rem auto; }
+.footnotes { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--rule); font-size: 0.92rem; color: var(--muted); }
+.footnotes ol { padding-left: 1.2rem; }
+.footnotes .reversefootnote { text-decoration: none; margin-left: 0.2rem; }
+sup[role="doc-noteref"] a, a.footnote { text-decoration: none; font-family: var(--ui); font-size: 0.8em; padding: 0 0.1em; }
+.cite, .related { margin-top: 3rem; padding-top: 1.4rem; border-top: 1px solid var(--rule); }
+.cite h2, .related h2 { margin: 0 0 0.8rem; font-size: 1.15rem; font-weight: 600; }
+.cite-box { position: relative; }
+.cite-box pre { margin: 0; padding-right: 4.5rem; font-size: 0.82rem; white-space: pre-wrap; word-break: break-word; }
+.cite .copy { position: absolute; top: 0.5rem; right: 0.5rem; font: 500 0.8rem var(--ui); color: var(--muted); background: var(--bg); border: 1px solid var(--rule); border-radius: 4px; padding: 0.2rem 0.6rem; cursor: pointer; }
+.cite .copy:hover { color: var(--accent-ink); border-color: var(--accent); }
+.related ul { list-style: none; margin: 0; padding: 0; }
+.related li { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding: 0.55rem 0; border-bottom: 1px solid var(--rule); }
+.related li a { color: var(--ink); text-decoration: none; font-weight: 600; line-height: 1.5; }
+.related li a:hover { color: var(--accent-ink); }
+.related time { flex: none; color: var(--faint); font-family: var(--ui); font-size: 0.88rem; }
+@media (max-width: 600px) { .related li { flex-direction: column; gap: 0; } }
