@@ -1,22 +1,22 @@
 ---
 ---
-/* Same palette and light/dark behaviour as phu-pmh.github.io, set in a serif for reading. */
+/* White page with brick-red accents taken from the Pyit Taing Htaung icon, set in a serif for reading. */
 :root {
-  --bg: #f4f6f9; --ink: #0e1a2b; --muted: #586378; --faint: #8b95a7; --rule: #dce2ea;
-  --accent: #2b59c9; --accent-ink: #1f47a8; --soft: #dde6fa; --mark: #c9dafc; --code: #e9edf3;
+  --bg: #ffffff; --ink: #1a1a1a; --muted: #5c5c5c; --faint: #8f8f8f; --rule: #e6e6e6;
+  --accent: #b8322b; --accent-ink: #9a2a24; --soft: #fbe9e6; --mark: #f7d4ce; --code: #f4f4f4;
   --font: "Source Serif 4", "Noto Sans Myanmar", "Myanmar Text", "Myanmar Sangam MN", Padauk, Georgia, serif;
   --ui: "Familjen Grotesk", "Myanmar Text", "Myanmar Sangam MN", "Helvetica Neue", Arial, sans-serif;
   --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #0b111b; --ink: #e5eaf2; --muted: #96a2b6; --faint: #66728a; --rule: #1e2838;
-    --accent: #8db1ff; --accent-ink: #a9c4ff; --soft: #18253f; --mark: #233c6b; --code: #131b29; color-scheme: dark;
+    --bg: #141414; --ink: #ececec; --muted: #a3a3a3; --faint: #737373; --rule: #2a2a2a;
+    --accent: #f08a7e; --accent-ink: #f5a398; --soft: #2e1c1a; --mark: #5a2722; --code: #1e1e1e; color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #0b111b; --ink: #e5eaf2; --muted: #96a2b6; --faint: #66728a; --rule: #1e2838;
-  --accent: #8db1ff; --accent-ink: #a9c4ff; --soft: #18253f; --mark: #233c6b; --code: #131b29; color-scheme: dark;
+  --bg: #141414; --ink: #ececec; --muted: #a3a3a3; --faint: #737373; --rule: #2a2a2a;
+  --accent: #f08a7e; --accent-ink: #f5a398; --soft: #2e1c1a; --mark: #5a2722; --code: #1e1e1e; color-scheme: dark;
 }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
@@ -35,7 +35,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 /* header */
 .site-header { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; padding: 1.4rem 0 1.2rem; border-bottom: 1px solid var(--rule); margin-bottom: 2.6rem; }
 .site-title { display: inline-flex; align-items: center; gap: 0.55rem; color: var(--ink); text-decoration: none; font-weight: 600; font-size: 1.3rem; letter-spacing: -0.02em; }
-.site-title .dot { width: 0.6rem; height: 0.6rem; border-radius: 50%; background: var(--accent); }
+.site-title .doll { width: 24px; height: 24px; image-rendering: pixelated; flex: none; }
 .site-nav { display: flex; align-items: center; gap: 1.3rem; }
 .site-nav a { color: var(--muted); text-decoration: none; font-size: 0.98rem; }
 .site-nav a:hover, .site-nav a[aria-current] { color: var(--accent-ink); }
