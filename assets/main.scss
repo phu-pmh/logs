@@ -164,3 +164,11 @@ sup[role="doc-noteref"] a, a.footnote { text-decoration: none; font-family: var(
   .toc a { color: var(--muted); }
   .toc a.on { color: var(--accent-ink); font-weight: 600; }
 }
+
+/* Front page: just a date and a title per post. */
+.blog-posts { list-style: none; margin: 0; padding: 0; }
+.blog-posts li { display: flex; gap: 1.5rem; align-items: baseline; padding: 0.3rem 0; }
+.blog-posts time { flex: none; width: 7.5rem; color: var(--faint); font-family: var(--ui); font-size: 0.92rem; font-variant-numeric: tabular-nums; }
+.blog-posts a { color: var(--ink); text-decoration: none; line-height: 1.5; }
+.blog-posts a:hover { color: var(--accent-ink); text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 600px) { .blog-posts li { flex-direction: column; gap: 0; padding: 0.45rem 0; } }
